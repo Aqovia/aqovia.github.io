@@ -138,8 +138,8 @@ jQuery(function ($) {
         if ($('#googleMap').length > 0) {
 
             //set your google maps parameters
-            var $latitude = 48.869319, //If you unable to find latitude and longitude of your address. Please visit http://www.latlong.net/convert-address-to-lat-long.html you can easily generate.
-                $longitude = 2.354261,
+            var $latitude = 51.515812, //If you unable to find latitude and longitude of your address. Please visit http://www.latlong.net/convert-address-to-lat-long.html you can easily generate.
+                $longitude =  -0.132548,
                 $map_zoom = 16; /* ZOOM SETTING */
 
             //google map custom marker icon
