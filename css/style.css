@@ -14,12 +14,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color : #000;
     margin-top: 0;
-	font-family:Gotham, "Helvetica Neue" "sans-serif";
+	font-family: Gotham, "Helvetica Neue" "sans-serif";
 	font-weight: 200;
     }
 
 h1 {
-	color       : #FFFFFF;
+	color       : #333F44;
 	font-weight: 200;
     font-size     : 41px;
     line-height   : 59px;
@@ -28,7 +28,7 @@ h1 {
 h2 {
 	font-weight: 200;
 	color       : #333F44;
-    font-size     : 34px;
+    font-size     : 30px;
     line-height   : 46px;
     margin-bottom : 10px;
     }
@@ -71,8 +71,8 @@ h6 {
 p {
 	font-size: 18px;
 	font-weight: 200;
-   	color : #333F44;
-    	margin-bottom: 15px;
+    color : #333F44;
+    margin-bottom: 15px;
     }
 
 /*--------------------------------------
@@ -129,7 +129,7 @@ ul {
    main Wrapper
    -------------------*/
 #main-wrapper {
-    background : #ffffff;
+    background : #000;
     }
 
 /*Button Style*/
@@ -328,6 +328,7 @@ ul {
 
 .navbar {
     border-radius : 0;
+	background-color: #000;
     }
 
 .navbar-default {
@@ -349,7 +350,7 @@ ul {
     }
 
 .navbar-default .navbar-nav > li > a {
-    color          : #434345;
+    color          : #B1B1B1;
     font-size      : 15px;
     font-weight    : 700;
     padding        : 8px 10px;
@@ -497,6 +498,7 @@ ul {
 
 @media (max-width : 768px) {
     .navbar-toggle {
+		color: aliceblue;
         display : block;
         }
     }
@@ -520,7 +522,7 @@ ul {
     }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color : #000;
+    background-color : #fff;
     }
 
 .navbar-toggle .icon-bar + .icon-bar {
@@ -849,7 +851,7 @@ ul {
     background-color : #f9f9f9;
     }
 
-.gray-bg .section-title h2{
+.gray-bg .-title h2{
     background-color : #f9f9f9;
     }
 
@@ -994,9 +996,9 @@ ul {
  * -------------------------------------------- */
 
 .page-header {
-    padding : 30px 0;
+    padding : 8% 0;
     margin  : 0;
-    background: #211f1f;
+    background-image: url(../img/Feature-Image-about.jpg);
     }
 
 .page-header h1 {
