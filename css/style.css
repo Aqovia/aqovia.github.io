@@ -69,9 +69,10 @@ h6 {
  * Paragraph Style
  *--------------------------------------*/
 p {
+	font-size: 18px;
 	font-weight: 200;
-    color : #333F44;
-    margin-bottom: 15px;
+   	color : #333F44;
+    	margin-bottom: 15px;
     }
 
 /*--------------------------------------
