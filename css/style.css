@@ -1,5 +1,10 @@
+@font-face { 
+	font-family: Raleway-Light; src: url('../fonts/font-awesome/fonts/Raleway-Light.ttf');
+	font-family: Raleway-Medium; src: url('../fonts/font-awesome/fonts/Raleway-Medium.ttf');
+	} 
+
 body {
-    font-family : "Raleway Light", "Raleway";
+    font-family : Raleway-Light;
     font-size   : 14px;
     line-height : 26px;
     font-weight : 300;
@@ -62,7 +67,7 @@ a.anchor{
 h1, h2, h3, h4, h5, h6 {
     color : #000;
     margin-top: 0;
-	font-family: "Raleway Light", "Raleway";
+	font-family: Raleway-Black;
 	font-weight: 200;
     }
 
