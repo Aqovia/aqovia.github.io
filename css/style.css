@@ -1,13 +1,12 @@
 @font-face { 
-	font-family: Raleway-Light; src: url('../fonts/font-awesome/fonts/Raleway-Light.ttf');
-	font-family: Raleway-Medium; src: url('../fonts/font-awesome/fonts/Raleway-Medium.ttf');
+	font-family: Raleway; src: url('../fonts/font-awesome/fonts/Raleway-Medium.ttf');
 	} 
 
 body {
-    font-family : Raleway-Light;
+    font-family : Raleway;
     font-size   : 14px;
     line-height : 26px;
-    
+    font-weight: bolder;
     background  : #ffffff;
     }
 
@@ -67,8 +66,8 @@ a.anchor{
 h1, h2, h3, h4, h5, h6 {
     color : #000;
     margin-top: 0;
-	font-family: Raleway-Medium;
-	
+	font-family: Raleway;
+	font-weight: lighter;
     }
 
 h1 {
