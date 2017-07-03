@@ -7,7 +7,7 @@ body {
     font-family : Raleway-Light;
     font-size   : 14px;
     line-height : 26px;
-    font-weight : 300;
+    
     background  : #ffffff;
     }
 
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
     color : #000;
     margin-top: 0;
 	font-family: Raleway-Medium;
-	font-weight: 200;
+	
     }
 
 h1 {
