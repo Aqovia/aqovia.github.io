@@ -1,12 +1,8 @@
-@font-face { 
-	font-family: Raleway; src: url('../fonts/font-awesome/fonts/Raleway-Medium.ttf');
-	} 
-
 body {
-    font-family : Raleway;
+    font-family : "Raleway Light", "Raleway";
     font-size   : 14px;
     line-height : 26px;
-    font-weight: bolder;
+    font-weight : 300;
     background  : #ffffff;
     }
 
@@ -59,6 +55,8 @@ a.anchor{
 		height: 600px;
 	}
 }
+
+
 /* --------------------------------------
  * Global Typography
  * ------------------------------------------*/
@@ -66,8 +64,8 @@ a.anchor{
 h1, h2, h3, h4, h5, h6 {
     color : #000;
     margin-top: 0;
-	font-family: Raleway;
-	font-weight: lighter;
+	font-family: "Raleway Light", "Raleway";
+	font-weight: 200;
     }
 
 h1 {
@@ -1055,6 +1053,14 @@ ul {
 	background-size: cover;
     }
 
+.page-header2 {
+    padding : 8% 0;
+    margin  : 0;
+    /*background-image: url(../img/Feature-Image-about-3.jpg);*/
+	background-position: center;
+	background-size: cover;
+    }
+
 .page-header h1 {
     color     : #ffffff;
     margin: 0;
@@ -1062,6 +1068,12 @@ ul {
     font-size: 46px;
     }
 
+.page-header2 h1 {
+    color     : #ffffff;
+    margin: 0;
+    font-weight: 700;
+    font-size: 46px;
+    }
 
 /* --------------------------------------------
  *   Breadcrumb
