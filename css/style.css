@@ -76,16 +76,6 @@ a.anchor{
 	-webkit-animation: arrow 2s infinite; 
 }
 
-.arrows-gdpr {
-	width: 60px;
-	height: 72px;
-	position:relative;
-	left: 50%;
-	margin-left: -30px;
-	margin-top: 10px;
-	bottom: 20px;
-}
-
 .arrows-gdpr path {
 	stroke: #7bb69d;
 	fill: transparent;
