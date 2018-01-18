@@ -79,9 +79,6 @@ a.anchor{
 .arrows-gdpr path {
 	stroke: #7bb69d;
 	fill: transparent;
-	stroke-width: 1px;	
-	animation: arrow 2s infinite;
-	-webkit-animation: arrow 2s infinite; 
 }
 
 @keyframes arrow
