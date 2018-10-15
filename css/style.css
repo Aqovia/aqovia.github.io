@@ -161,10 +161,10 @@ h2 {
     }
 
 h3 {
-	font-weight: 200;
+	font-weight: 800;
 	color       : #333F44;
-    font-size     : 23px;
-    line-height   : 23px;
+    font-size     : 73px;
+    
     margin-bottom : 10px;
     }
 
@@ -1144,14 +1144,14 @@ ul {
     color     : #ffffff;
     margin: 0;
     font-weight: 700;
-    font-size: 46px;
+    
     }
 
 .page-header2 h1 {
     color     : #ffffff;
     margin: 0;
     font-weight: 700;
-    font-size: 46px;
+    
     }
 
 /* --------------------------------------------
@@ -1433,8 +1433,17 @@ ul {
     margin : 0;
     }
 
-@media (max-width: 320px) {
-
+@media (max-width: 360px) {
+	h1{
+		font-size: 30px;
+		line-height: 36px;
+	}
+	h3{
+		font-size: 40px;
+	}
+	.monitor{
+		width: 200px;
+	}
     .left-icon-style{
         text-align: center;
         }
@@ -1729,7 +1738,7 @@ ul {
 
 
 /* OWL Slider Controls */
-/*
+
 .owl-controls{
     width: 100%;
     text-align: center;
@@ -1754,7 +1763,7 @@ ul {
 .owl-controls .owl-dot.active span{
     background: #008b92;
     border-color: #008b92;
-    }*/
+    }
 
 
 /* -----------------------
