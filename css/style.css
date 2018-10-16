@@ -1454,6 +1454,12 @@ ul {
         }
     }
 
+
+@media (max-width: 600px) {
+	h3{
+		font-size: 50px;
+	}
+    }
 /*---------------------------
  * Top side icon style */
 
