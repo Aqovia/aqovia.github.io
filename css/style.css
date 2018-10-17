@@ -1443,7 +1443,7 @@ ul {
 		font-size: 40px;
 	}
 	.monitor{
-		width: 200px;
+		width: 150px;
 	}
     .left-icon-style{
         text-align: center;
@@ -1459,6 +1459,9 @@ ul {
 @media (max-width: 600px) {
 	h3{
 		font-size: 50px;
+	}
+	.monitor{
+		width: 200px;
 	}
     }
 /*---------------------------
