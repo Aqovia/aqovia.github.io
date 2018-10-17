@@ -1159,6 +1159,7 @@ ul {
  * -------------------------------------------- */
 .breadcrumb-wrapper{
     border-bottom: 1px solid #f5f5f5;
+	font-size: 24px
     }
 .breadcrumb{
     background: transparent;
