@@ -1,0 +1,54 @@
+.page-title {
+	.mixin-dynamic-font-size(1.625rem, 3.75rem, @from-viewport: 20rem);	
+	margin: 0 0 0.25em;
+
+	font-weight: 900;
+	text-transform: uppercase;
+	
+	color: #fff;
+	text-shadow: 0 0.1em 0 fade(darken(@bg-color, 20%), 20%);
+}
+
+
+
+.bold-heading {
+	.mixin-dynamic-font-size(1.25rem,2rem,@to-viewport: 43.75rem);
+	margin: 0;
+
+	font-weight: 900;
+	line-height: 1.25;
+	text-transform: uppercase;
+	color: @bg-color;
+	
+	.emphasised-bg-section & {
+		color: @accent-color;
+	}
+}
+
+
+
+.default-heading {
+	.mixin-dynamic-font-size(1.25rem,2rem,@from-viewport: 20rem);
+	
+	font-weight: 700;
+	line-height: 1.5;
+	color: @bg-color;
+	
+	.emphasised-bg-section & {
+		color: @accent-color;
+	}
+}
+
+
+
+.small-heading {
+	.mixin-dynamic-font-size(1.125rem,1.25rem,@from-viewport: 20rem);
+	
+	font-weight: 700;
+	line-height: 1.5;
+	color: @bg-color;
+	
+	.emphasised-bg-section & {
+		color: @accent-color;
+	}
+}

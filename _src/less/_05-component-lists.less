@@ -1,0 +1,26 @@
+.bold-numbered-list {
+	list-style: none;
+  counter-reset: bold-numbers;
+  
+  li {
+  	counter-increment: bold-numbers;
+  	
+  	&:before {
+  		content: counter(bold-numbers);
+      
+      margin-right: .25em;
+  		
+  		font-weight: 900;
+  		font-size: 3em;
+  		color: @strong-accent-color;
+  	}
+  }
+}
+
+
+
+.unstyled-list {
+  list-style-type: none;
+  margin: 1em 0;
+  padding: 0;  
+}

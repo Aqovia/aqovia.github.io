@@ -1,9 +1,21 @@
 {
   "images": [{
-    "src": "image-one.png",
-    "alt": "Image one alt text"
+    "src": "img/clients/itv.svg",
+    "alt": "ITV"
   }, {
-    "src": "image-two.png",
-    "alt": "Image two alt text"
+    "src": "img/clients/bbc.svg",
+    "alt": "BBC"
+  }, {
+    "src": "img/clients/interxion.svg",
+    "alt": "Interxion"
+  }, {
+    "src": "img/clients/vodafone.svg",
+    "alt": "Vodafone"
+  }, {
+    "src": "img/clients/sky.svg",
+    "alt": "Sky"
+  }, {
+    "src": "img/clients/pearson.svg",
+    "alt": "Pearson"
   }]
 }

@@ -1,0 +1,13 @@
+<section class="alternate-bg-section">
+	<div class="edged-section">
+		<h2 class="bold-heading">Our leading clients</h2>
+		
+		<ul class="clients-logo">
+			{% for image in images %}
+			<li class="clients-logo__item">
+			  <img src="{{image.src}}" alt="{{image.alt}}">
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>

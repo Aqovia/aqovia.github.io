@@ -1,0 +1,27 @@
+.clients-logo {
+	list-style-type: none;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: 0;
+	padding: 0;
+	
+	@media screen and (max-width: 720px) {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+}
+
+.clients-logo__item {
+	width: 80px;
+	
+	margin: 0.75em;
+	
+	& img {
+		width: 100%;
+		height: auto;
+	}
+}

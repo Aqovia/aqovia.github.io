@@ -3,3 +3,49 @@
 /* -------------------------------------- */
 
 /* the only place where the use of !important may be tolerated */
+
+.u-short-copy-font-size {
+	.mixin-dynamic-font-size(1.125rem,1.5rem,@to-viewport: 43.75rem);
+	line-height: 1.6667;
+	font-weight: 500;
+}
+
+
+
+.u-pull-left,
+.u-pull-right {
+	
+	&.-stackable {
+		@media screen and (max-width: 37.5rem) {
+			display: block;
+			
+			margin: 1em auto;
+			
+			float: none;
+		}
+	}
+
+	@media screen and (min-width: 601px) and (max-width: 43.75rem) {
+		max-width: 50%;
+	}
+}
+
+.u-pull-left {
+	margin: 0.5em 0.5em 0.5em 0;
+	
+	float: left;
+	
+}
+
+.u-pull-right {
+	margin: 0.5em 0 0.5em 0.5em;
+	
+	float: right;
+}
+
+
+
+/* Margin and padding */
+.u-margin-none {
+	margin: 0;
+}

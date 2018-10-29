@@ -7,12 +7,45 @@
 		<link rel="stylesheet" href="css/styles.css" media="all">
 
 		<!-- Google fonts -->
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:500,700,900" rel="stylesheet">
 </head>
 <body>
+	<header class="main-header">
+		<div class="main-header__edges">
+			
+			<div class="main-header__branding">
+				<a href="/" class="main-header__home-link">
+					<img src="img/aqovia-logo.svg" alt="Aqovia logo" class="main-header__logo">
+				</a>
+				
+				<a href="/" class="main-header__contact">Contact us</a>
+			</div>
+			
+			{% include "partials/navigation.html" %}
+			
+		</div>
+	</header>
+
+	<div class="main-content">			
+		<!-- You write code for this content block in another file -->
+	  {% block content %} {% endblock %}
+			
+	</div>
+
+	<footer class="main-footer">
+		<section class="emphasised-bg-section">
+			<div class="edged-section u-short-copy-font-size">
+				<p class="main-footer__heading">Ready to innovate your technological efforts?</p>
+				<p>We can align you in the right direction with a solution for your business needs.</p>
+				<a href="/" class="main-btn">Contact Us</a>
+			</div>			
+		</section>
+
+		<section class="main-footer__legal">
+			<p>© 2008 - 2018 Aqovia UK Limited. Registered in England and Wales (Reg. No. 06846037).</p>
+		</section>
+	</footer>
 	
-	<!-- You write code for this content block in another file -->
-  {% block content %} {% endblock %}
 
 	<script src="js/scripts.js" type="text/javascript"></script>
 </body>
