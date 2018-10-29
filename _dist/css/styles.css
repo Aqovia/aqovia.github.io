@@ -642,6 +642,21 @@ img {
           transform: skew(-20deg);
   background-color: rgba(255, 211, 112, 0.3);
 }
+.short-copy-emphasis {
+  font-size: 3.42857143vw;
+  line-height: 1.6667;
+  font-weight: 500;
+}
+@media screen and (max-width: 32.8125rem) {
+  .short-copy-emphasis {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (min-width: 43.75rem) {
+  .short-copy-emphasis {
+    font-size: 1.5rem;
+  }
+}
 .statement {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -1009,21 +1024,6 @@ img {
 /* ==utility classes                      */
 /* -------------------------------------- */
 /* the only place where the use of !important may be tolerated */
-.u-short-copy-font-size {
-  font-size: 3.42857143vw;
-  line-height: 1.6667;
-  font-weight: 500;
-}
-@media screen and (max-width: 32.8125rem) {
-  .u-short-copy-font-size {
-    font-size: 1.125rem;
-  }
-}
-@media screen and (min-width: 43.75rem) {
-  .u-short-copy-font-size {
-    font-size: 1.5rem;
-  }
-}
 @media screen and (max-width: 37.5rem) {
   .u-pull-left.-stackable,
   .u-pull-right.-stackable {
