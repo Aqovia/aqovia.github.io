@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^2.2.2",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-data": "*",
+    "gulp-imagemin": "*",
+    "gulp-less": "*",
+    "gulp-livereload": "*",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-notify": "*",
+    "gulp-nunjucks-render": "*",
+    "gulp-sketch": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-util": "^3.0.8",
+    "require-dir": "^0.3.2"
+  }
+}

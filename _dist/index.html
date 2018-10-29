@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+		<meta charset="UTF-8">
+		<title>My Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/styles.css" media="all">
+
+		<!-- Google fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	
+	<!-- You write code for this content block in another file -->
+  
+<h1>This is the index page</h1>
+
+<!-- Adds the navigation partial -->
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<!-- Importing Nunjucks Macro -->
+
+<!-- Creating the navigation with activePage = 'home' -->
+
+<nav>
+  <a href="#" class=" active ">Home</a>
+  <a href="#" class="">About</a>
+  <a href="#" class="">Contact</a>
+</nav>
+
+
+<div class="gallery">
+  <!-- Loops through "images" array -->
+  
+  <div class="gallery__item">
+    <img src="image-one.png" alt="Image one alt text">
+  </div>
+  
+  <div class="gallery__item">
+    <img src="image-two.png" alt="Image two alt text">
+  </div>
+  
+</div>
+
+
+
+	<script src="js/scripts.js" type="text/javascript"></script>
+</body>
+</html>
