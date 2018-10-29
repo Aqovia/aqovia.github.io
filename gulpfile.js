@@ -14,6 +14,7 @@ var paths = {
 		html: './_src/html',
 		js: './_src/js/*.js',
 		img: './_src/img/*.{png,jpg,jpeg,gif,svg}',
+		resources: './_src/resources/**/*',
 		styles: './_src/less/**/*.less',
 		libs: './_src/lib',
 		fonts: './_src/fonts/**/*'
@@ -22,12 +23,13 @@ var paths = {
 		baseDir: './_dist',
 		js: './_dist/js',
 		img: './_dist/img',
+		resources: './_dist/resources',
 		styles: './_dist/css',
 		fonts: './_dist/css/fonts'
 	}
 }
 
-var defaultTasks = ['styles', 'js', 'copyLib', 'images', 'nunjucks'];
+var defaultTasks = ['styles', 'js', 'copyLib', 'copyResources', 'images', 'nunjucks'];
 
 
 
@@ -39,6 +41,8 @@ gulp.task('styles', require('./gulpfile-tasks/styles')(gulp, browserSync, plugin
 gulp.task('js', require('./gulpfile-tasks/scripts')(gulp, browserSync, paths));
 
 gulp.task('copyLib', require('./gulpfile-tasks/libraries')(gulp, paths));
+
+gulp.task('copyResources', require('./gulpfile-tasks/resources')(gulp, paths));
 
 gulp.task('images', require('./gulpfile-tasks/images')(gulp, plugins, paths));
 
