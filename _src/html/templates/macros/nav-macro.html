@@ -1,8 +1,8 @@
-{% macro nav(activeSection) %}
+{% macro active(activeMenu) %}
 <nav class="site-nav">
-	<ul>
-		<li class="site-nav__item" class="{%if activeSection == 'about' %} active {% endif %}"><a href="">About Us</a></li>
-		<li class="site-nav__item" class="{%if activeSection == 'work' %} active {% endif %}"><a href="">What we do</a></li>
+	<ul class="site-nav__level-01">
+		<li class="site-nav__item {% if (activeMenu) == 'about' %} -active {% endif %}"><a href="about.html">About Us</a></li>
+		<li class="site-nav__item {% if (activeMenu) == 'work' %} -active {% endif %}"><a href="what-we-do.html">What we do</a></li>
 	</ul>
 </nav>
 {% endmacro %}

@@ -14,14 +14,15 @@
 		<div class="main-header__edges">
 			
 			<div class="main-header__branding">
-				<a href="../_dist/" class="main-header__home-link">
+				<a href="index.html" class="main-header__home-link">
 					<img src="img/aqovia-logo.svg" alt="Aqovia logo" class="main-header__logo">
 				</a>
 				
 				<a href="/" class="main-header__contact">Contact us</a>
 			</div>
 			
-			{% include "partials/navigation.html" %}
+			{% import 'macros/nav-macro.html' as nav %}
+			{{ nav.active(menuItem) }}
 			
 		</div>
 	</header>

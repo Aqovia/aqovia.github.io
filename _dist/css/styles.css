@@ -561,6 +561,7 @@ img {
 }
 .default-heading {
   font-size: 6.25vw;
+  margin: 0 0 0.5em;
   font-weight: 700;
   line-height: 1.5;
   color: #008b92;
@@ -808,11 +809,15 @@ img {
   line-height: 1.2;
 }
 .site-nav__item a {
+  padding-bottom: 0.25em;
   text-decoration: none;
   color: #fff;
 }
 .site-nav__item a:hover {
   color: #FCBF00;
+}
+.site-nav__item.-active a {
+  border-bottom: 1px solid #FFD370;
 }
 .home-hero {
   position: relative;
