@@ -55,3 +55,25 @@
 .full-bleed-img {
 	width: 100%;
 }
+
+
+.uneven-2-parts-content {
+	display: flex;
+	flex-wrap: wrap;
+	
+	& > *:first-child {
+		width: 60%;
+		
+		@media screen and (max-width: 42.5rem) {
+			width: 100%;
+		} 
+	}
+
+	& > *:last-child {
+		width: 40%;
+		
+		@media screen and (max-width: 42.5rem) {
+			width: 100%;
+		}
+	}
+}

@@ -42,12 +42,22 @@
 	justify-content: space-around;
 	flex-wrap: wrap;
 	
-	&.-four-items-stackable-in-two {
+	&.-three-items-stackable {
 		& > * {
-			width: 20vw;
+			width: 31%;
 			
 			@media screen and (max-width: 46.25rem) {
-				width: 45vw;
+				width: 100%;
+			}
+		}
+	}
+	
+	&.-four-items-stackable-in-two {
+		& > * {
+			width: 20%;
+			
+			@media screen and (max-width: 46.25rem) {
+				width: 45%;
 			}
 		}
 	}
@@ -68,8 +78,25 @@
 }
 
 
+.u-block {
+	display: block;
+}
+
+.u-overflow-clear {
+	overflow: hidden;
+}
+
+
 
 /* Margin and padding */
 .u-margin-none {
 	margin: 0;
+}
+
+.u-margin-bottom-large {
+	margin-bottom: 2rem;
+}
+
+.u-padding-medium {
+	padding: 1rem;
 }
