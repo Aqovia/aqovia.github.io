@@ -550,7 +550,7 @@ h5 {
 }
 .bold-heading {
   font-size: 4.57142857vw;
-  margin: 0;
+  margin: 0 0 0.5em;
   font-weight: 900;
   line-height: 1.25;
   text-transform: uppercase;
@@ -591,6 +591,7 @@ h5 {
 }
 .small-heading {
   font-size: 5.625vw;
+  margin: 0 0 0.5em;
   font-weight: 700;
   line-height: 1.5;
   color: #008b92;
@@ -629,6 +630,7 @@ h5 {
   font-size: 3.42857143vw;
   position: relative;
   z-index: 1;
+  margin-bottom: 1em;
   line-height: 1.6667;
   font-weight: 500;
 }
@@ -655,6 +657,7 @@ h5 {
 }
 .short-copy-emphasis {
   font-size: 3.42857143vw;
+  margin-bottom: 1em;
   line-height: 1.6667;
   font-weight: 500;
 }
@@ -742,11 +745,15 @@ h5 {
   }
 }
 .bold-numbered-list {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
   list-style: none;
   counter-reset: bold-numbers;
 }
 .bold-numbered-list li {
   counter-increment: bold-numbers;
+  text-align: left;
 }
 .bold-numbered-list li:before {
   content: counter(bold-numbers);
@@ -933,7 +940,7 @@ h5 {
   }
 }
 .work-listing__visual {
-  width: 12.5em;
+  width: 12.5rem;
   height: auto;
 }
 @media screen and (max-width: 37rem) {
@@ -959,7 +966,7 @@ h5 {
 }
 .work-listing__link {
   margin-top: 1em;
-  margin-left: 12.5em;
+  margin-left: 12.5rem;
 }
 @media screen and (max-width: 37rem) {
   .work-listing__link {
