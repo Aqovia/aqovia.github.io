@@ -40,9 +40,10 @@
 .u-row {
 	display: flex;
 	justify-content: space-around;
-	flex-wrap: wrap;
 	
 	&.-three-items-stackable {
+		flex-wrap: wrap;
+
 		& > * {
 			width: 31%;
 			
@@ -53,11 +54,23 @@
 	}
 	
 	&.-four-items-stackable-in-two {
+		flex-wrap: wrap;
+		
 		& > * {
 			width: 20%;
 			
 			@media screen and (max-width: 46.25rem) {
 				width: 45%;
+			}
+		}
+	}
+	
+	@media screen and (max-width: 600px) {
+		&.-stacks-at-600px {
+			flex-wrap: wrap;
+			
+			& > * {
+				width: 100%;	
 			}
 		}
 	}
@@ -88,6 +101,12 @@
 
 
 
+.u-full-width {
+	width: 100%;
+}
+
+
+
 /* Margin and padding */
 .u-margin-none {
 	margin: 0;
@@ -99,4 +118,8 @@
 
 .u-padding-medium {
 	padding: 1rem;
+}
+
+.u-padding-bottom-medium {
+	padding-bottom: 1rem;
 }
