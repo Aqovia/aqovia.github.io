@@ -20,12 +20,12 @@ var paths = {
 		fonts: './_src/fonts/**/*'
 	},
 	build: {
-		baseDir: './_dist',
-		js: './_dist/js',
-		img: './_dist/img',
-		resources: './_dist/resources',
-		styles: './_dist/css',
-		fonts: './_dist/css/fonts'
+		baseDir: './',
+		js: './js',
+		img: './img',
+		resources: './resources',
+		styles: './css',
+		fonts: './css/fonts'
 	}
 }
 
