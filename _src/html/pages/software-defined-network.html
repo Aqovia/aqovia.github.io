@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% set menuItem = "work" %}
 
-{% block title %}Software Defined Network{% endblock %}
+{% block title %}Software Defined Network and Network Function Virtualisation{% endblock %}
 
 {% block content %}
 <section>
@@ -27,7 +27,7 @@
 			Providing automated applications can not only increase revenue and reduce costs but also vastly improve the quality of experience.
 		</p>
 		
-		<p>Reducing the time to resolve support tickets (Assurance) by <strong>70%</strong></p>
+		<p>SDN and NFV are complementary approaches, which both aim to advance a software-based approach to networking.</p>
 	</div>
 </section>
 
@@ -47,11 +47,9 @@
 
 <section class="alternate-bg-section">
 	<div class="edged-section u-overflow-clear">
-		<h2 class="bold-heading">Area of expertise</h2>
+		<h3 class="default-heading">Area of expertise</h3>
 
 		<p>The Aqovia SDN and NFV solution offer a light touch integration based on a top-down, value-based approach, using three key areas of expertise:</p>
-
-		<img src="img/sdn-architecture.png" alt="" class="u-pull-right">
 
 		<ol class="bold-numbered-list u-block">
 			<li>Pedigree of Software Development excellence</li>
@@ -61,7 +59,17 @@
 	</div>
 </section>
 
+
 <section class="default-bg-section">
+	<div class="edged-section">
+		<h2 class="bold-heading">The architecture behind it</h2>
+		<img src="img/sdn-architecture.png" alt="" class="u-centered-image u-margin-bottom-medium">
+		<p>The solution is based on a scalable architecture allowing the collection, processing and enrichment and visualisation of Network, Service and Customer Quality processes. 
+</p>
+	</div>
+</section>
+
+<section class="emphasised-bg-section">
 	<div class="edged-section">
 		<h2 class="bold-heading">The benefits</h2>
 		<p>SDN and NFV are equally critical parts of a modern virtual network and the benefits for Cloud service providers, Telcos and Enterprise network operators to:</p>
@@ -78,6 +86,8 @@
 		</div>
 	</div>
 </section>
+
+{% include "partials/clients-logo.html" %}
 
 {% endblock %}
 
