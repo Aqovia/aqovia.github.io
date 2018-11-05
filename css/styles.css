@@ -507,11 +507,16 @@ h5 {
   width: 95%;
 }
 /* FOOTER */
+.main-footer {
+  background-color: #007379;
+  color: #fff;
+}
 .main-footer__heading {
   font-size: 4.57142857vw;
   margin: 0;
   font-weight: 900;
   text-transform: uppercase;
+  color: #FFD370;
 }
 @media screen and (max-width: 27.34375rem) {
   .main-footer__heading {
@@ -527,7 +532,7 @@ h5 {
   padding: 1em;
   font-size: 0.875rem;
   text-align: center;
-  background-color: #007379;
+  background-color: #005a5f;
   color: #fff;
 }
 .page-title {
@@ -1201,6 +1206,9 @@ h5 {
 }
 .u-margin-bottom-large {
   margin-bottom: 2rem;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 1rem;
 }
 .u-padding-medium {
   padding: 1rem;

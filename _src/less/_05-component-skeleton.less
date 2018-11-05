@@ -53,12 +53,19 @@
 
 
 /* FOOTER */
+.main-footer {
+	background-color: darken(@bg-color, 5%);	
+	color: #fff;
+}
+
 .main-footer__heading {
 	.mixin-dynamic-font-size(1.25rem,2rem,@to-viewport: 43.75rem);
 	margin: 0;
 	
 	font-weight: 900;
 	text-transform: uppercase;
+	
+	color: @accent-color;
 }
 
 .main-footer__legal {
@@ -67,6 +74,6 @@
 	font-size: 0.875rem;
 	text-align: center;
 	
-	background-color: darken(@bg-color, 5%);
+	background-color: darken(@bg-color, 10%);
 	color: #fff;
 	}
