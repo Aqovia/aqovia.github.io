@@ -80,10 +80,7 @@ gulp.task('copyData', function() {
 
 
 // Default task
-// gulp.task('default', ['clean'], function() {
-//     gulp.start(defaultTasks);
-// });
-gulp.task('default', function() {
+gulp.task('default', ['clean'], function() {
     gulp.start(defaultTasks);
 });
 
