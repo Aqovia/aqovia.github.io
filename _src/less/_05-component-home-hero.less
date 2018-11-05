@@ -1,0 +1,34 @@
+.home-hero {
+	position: relative;
+	
+	padding: 0 0 3em;
+	
+}
+
+.home-hero__statement {
+	margin: 1em 0;
+}
+
+.home-hero__text {
+	.mixin-dynamic-font-size(1.125rem,2rem,@from-viewport: 20rem);
+	display: block;
+	
+	font-weight: 500;
+	
+	color: @accent-color;
+}
+
+
+
+.home-hero__accent-text {
+	.mixin-dynamic-font-size(1.625rem, 3.75rem, @from-viewport: 20rem);
+	display: block;
+	
+	margin-top: 0.1em;
+
+	font-weight: 900;
+	text-transform: uppercase;
+	
+	color: #fff;
+	text-shadow: 0 0.1em 0 fade(darken(@bg-color, 20%), 20%);
+}

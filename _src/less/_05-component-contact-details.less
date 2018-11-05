@@ -1,0 +1,36 @@
+.contact-details {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.contact-details__item {	
+	width: 30%;
+
+	@media screen and (max-width: 720px) {
+		margin-bottom: 2em;
+		width: 100%;
+		
+		text-align: center;
+	}
+}
+
+
+
+.contact-details__label {
+	.mixin-dynamic-font-size(1rem, 1.25rem,@to-viewport: 43.75rem);
+	font-weight: 500;
+	color: @bg-color;
+}
+
+.contact-details__info {
+	font-size: 1.5rem;
+	
+	a {
+		color: @main-text-color;
+		text-decoration: none;
+		
+		overflow-wrap: break-word;
+		break-word: break-word;
+	}
+}

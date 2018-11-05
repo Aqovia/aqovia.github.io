@@ -1,0 +1,152 @@
+{% extends "layout.html" %}
+{% set menuItem = "work" %}
+
+{% block title %}Microservices by Aqovia{% endblock %}
+
+{% block content %}
+
+<section>
+	<div class="edged-section">
+		<h1 class="page-title">Microservices</h1>
+		<p class="page-title-subtext">Aqovia Microservices ensure high product quality, greater customer satisfaction and a faster return of investment</p>
+	</div>
+</section>
+
+<section class="transition-to-default-bg-section">
+	<div class="edged-section">
+		<p>Aqovia have been practicing and implementing bespoke Microservices solutions to clients for over 5 years. Our technical experts in microservice architecture can work with you to create a solution that will provide great value, scale your application and grow your business.
+</p>
+		<a href="resources/microservices-v0.6.pdf" class="main-btn">Download infographics</a>
+	</div>
+</section>
+
+<section class="default-bg-section">
+	<div class="edged-section">
+		<h2 class="bold-heading">Why use microservices?</h2>
+		
+		<p>Applications are growing at a rapid pace, as is the number of different devices that back-end data must be available for. Through implementing Microservices in your business, you will experience:</p>
+
+		<ul class="unstyled-list">
+			<li class="statement">
+				<strong class="statement__hook">Freedom of technology</strong>
+				<span class="statement__description">Enables lower costs and higher margins for competitor and market advantage.</span>
+			</li>
+
+			<li class="statement">
+				<strong class="statement__hook">Easy to change</strong>
+				<span class="statement__description">Separate services can be developed quickly.</span>
+			</li>
+
+			<li class="statement">
+				<strong class="statement__hook">Easier to scale</strong>
+				<span class="statement__description">Traditional monoliths approach require having to scale the whole application. Microservice approach means each individual service can be scaled separately.</span>
+			</li>
+
+			<li class="statement">
+				<strong class="statement__hook">Less downtime</strong>
+				<span class="statement__description">When an application fails, other applications around it are unaffected.</span>
+			</li>
+		</ul>
+
+	</div>
+</section>
+
+
+<section class="alternate-bg-section">
+	<div class="edged-section">
+		<h2 class="bold-heading">How it works</h2>
+		<p>Microservices is a software development technique that structures an application as a collection of loosely coupled services. It moves away from the traditional Monolithic architecture, which are expensive to change and difficult to scale, and brings together a number of smaller services to create simple and adaptive software solutions.</p>
+		<h2 class="default-heading">Evolution of architecture</h2>
+		<p class="accent-text">Our autonomous platform is a Cloud tool which plugs in to your company's entire telemetry data streams and expands the grid through self-configuration, self-optimization and self-healing functions.</p>
+		
+		<div class="emphasised-bg-section u-row -three-items-stackable u-padding-medium">
+			<div class="u-text-center">
+				<img src="img/pre-soa.png" alt="" class="u-block">
+				<strong class="u-block">Pre-SOA (monolithic)</strong>
+				<span class="u-block">Tight coupling</span>
+			</div>
+
+			<div class="u-text-center">
+				<img src="img/traditional-soa.png" alt="" class="u-block">
+				<strong class="u-block">Traditional SOA</strong>
+				<span class="u-block">Looser coupling</span>
+			</div>
+
+			<div class="u-text-center">
+				<img src="img/microservices.png" alt="" class="u-block">
+				<strong class="u-block">Microservices</strong>
+				<span class="u-block">Decoupled</span>
+			</div>
+		</div>
+		
+	</div>
+</section>
+
+<section class="default-bg-section">
+	<div class="edged-section">		
+		<h2 class="default-heading">Microservices approach vs traditional approach</h2>
+		
+		<div class="uneven-2-parts-content">
+			
+			<div class="emphasised-bg-section u-padding-medium">
+				<h3 class="small-heading u-text-center">Microservices approach</h3>
+
+				<div class="u-margin-bottom-large">
+					<img src="img/micro-app1.png" alt="" class="u-centered-image">
+					<p>A microservice approach segregates functionality into small autonomous services.</p>
+				</div>
+
+				<div class="u-margin-bottom-large">
+					<img src="img/micro-app2.png" alt="" class="u-centered-image">
+					<p>And scales out by deploying independently and replicating these services across servers/VMs/containers.</p>
+				</div>
+
+				<img src="img/micro-app3.png" alt="" class="u-centered-image">
+				
+			</div>
+
+			<div class="alternate-bg-section u-padding-medium">
+				<h3 class="small-heading u-text-center">Traditional approach</h3>
+
+				<div class="u-margin-bottom-large">
+					<img src="img/traditional-app1.png" alt="" class="u-centered-image">
+					<p>A traditional application (Web app or larger service) usually has most of its functionality within a single process (often internally layered)</p>
+					
+				</div>
+
+				<div class="u-margin-bottom-large">
+					<img src="img/traditional-app2.png" alt="" class="u-centered-image">
+					<p>And scales by cloning the whole app on multiple servers/VMs/containers.</p>
+				</div>
+
+				<img src="img/traditional-app3.png" alt="" class="u-centered-image">
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+
+<section class="emphasised-bg-section">
+	<div class="edged-section">
+		<h2 class="bold-heading">By adopting Microservices for your business, you will benefit from</h2>
+
+		<div class="u-text-center">
+			<ol class="bold-numbered-list">
+				<li>Accelerated turnaround</li>
+				<li>Improve fault isolation & resolution</li>
+				<li>Enable on-demand flexibility & scalability</li>
+				<li>Make change less expensive</li>
+				<li>Unleash innovation</li>
+			</ol>
+		</div>
+		
+	</div>
+</section>
+
+{% include "partials/clients-logo.html" %}
+
+{% endblock %}
+
+{% block footerHeading %}To find out more about Microservices.{% endblock %}
+{% block footerDescription %}Please get in touch with a member of our team today.{% endblock %}

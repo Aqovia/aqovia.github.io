@@ -1,0 +1,79 @@
+/* HEADER */
+.main-header {
+	padding-top: 1rem;
+	
+	background-image: linear-gradient(to bottom, fade(#000, 25%), fade(#000, 0%) 70%);
+}
+
+.main-header__edges {
+	.mixin-content-edges();
+}
+
+
+.main-header__branding {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.main-header__home-link {
+	min-width: 0;
+	max-width: 200px;
+	width: 44%;
+}
+
+.main-header__logo {
+	width: 100%;
+	height: auto;
+}
+
+.main-header__contact {
+	padding: 0.5em;
+	
+	text-decoration: none;
+	border: 2px solid @strong-accent-color;
+	color: #fff;
+	
+	&:hover {
+		background-color: @strong-accent-color;
+		color: @main-text-color;
+	}
+}
+
+
+
+/* CONTENT */
+.main-content {
+	overflow: hidden;
+}
+
+.main-content__edges {
+	.mixin-content-edges();
+}
+
+
+/* FOOTER */
+.main-footer {
+	background-color: darken(@bg-color, 5%);	
+	color: #fff;
+}
+
+.main-footer__heading {
+	.mixin-dynamic-font-size(1.25rem,2rem,@to-viewport: 43.75rem);
+	margin: 0;
+	
+	font-weight: 900;
+	text-transform: uppercase;
+	
+	color: @accent-color;
+}
+
+.main-footer__legal {
+	padding: 1em;
+	
+	font-size: 0.875rem;
+	text-align: center;
+	
+	background-color: darken(@bg-color, 10%);
+	color: #fff;
+	}

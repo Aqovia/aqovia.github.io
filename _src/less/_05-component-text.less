@@ -1,0 +1,70 @@
+.page-title-subtext {
+	.mixin-dynamic-font-size(1rem,2rem,@from-viewport: 20rem);
+	margin: 0;
+	
+	font-weight: 500;
+	line-height: 1.75;
+	
+	color: @accent-color;
+}
+
+
+
+.accent-text {
+	.mixin-dynamic-font-size(1.125rem,1.5rem,@to-viewport: 43.75rem);
+	position: relative;
+	z-index: 1;
+	margin-bottom: 1em;
+	
+	line-height: 1.6667;
+	font-weight: 500;
+	
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+				
+		transform: skew(-20deg);
+		
+		background-color: fade(@accent-color, 30%);
+	}
+}
+
+
+
+.short-copy-emphasis {
+	.mixin-dynamic-font-size(1.125rem,1.5rem,@to-viewport: 43.75rem);
+	margin-bottom: 1em;
+	
+	line-height: 1.6667;
+	font-weight: 500;
+	
+}
+
+
+
+// .bold-word-emphasis {
+// 	.mixin-dynamic-font-size(1.25rem,2rem,@to-viewport: 43.75rem);
+	
+// 	font-weight: 900;
+// }
+
+
+
+.statement {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.statement__hook {
+	.mixin-dynamic-font-size(1.25rem,2rem,@to-viewport: 43.75rem);
+	display: block;
+	
+	font-weight: 900;
+}
+
+.statement__content {
+	display: block;
+}
