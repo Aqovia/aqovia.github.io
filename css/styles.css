@@ -819,9 +819,12 @@ h5 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .uneven-2-parts-content > *:first-child {
-  width: 60%;
+  width: 59%;
 }
 @media screen and (max-width: 42.5rem) {
   .uneven-2-parts-content > *:first-child {
@@ -829,10 +832,51 @@ h5 {
   }
 }
 .uneven-2-parts-content > *:last-child {
-  width: 40%;
+  width: 39%;
 }
 @media screen and (max-width: 42.5rem) {
   .uneven-2-parts-content > *:last-child {
+    width: 100%;
+  }
+}
+.up-to-3-columns-collapsible-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.up-to-3-columns-collapsible-list > * {
+  width: 32%;
+}
+@media screen and (min-width: 450px) and (max-width: 720px) {
+  .up-to-3-columns-collapsible-list > * {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 449px) {
+  .up-to-3-columns-collapsible-list > * {
+    width: 100%;
+  }
+}
+.up-to-2-columns-collapsible-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.up-to-2-columns-collapsible-list > * {
+  width: 49%;
+}
+@media screen and (max-width: 600px) {
+  .up-to-2-columns-collapsible-list > * {
     width: 100%;
   }
 }
@@ -1113,6 +1157,73 @@ h5 {
   text-decoration: none;
   overflow-wrap: break-word;
   break-word: break-word;
+}
+@media screen and (max-width: 42.5rem) {
+  .mini-profiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.mini-profiles-more {
+  font-size: 80%;
+}
+@media screen and (max-width: 42.5rem) {
+  .mini-profiles-more {
+    text-align: center;
+    font-size: 100%;
+  }
+}
+.mini-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1em;
+}
+.mini-profile:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 42.5rem) {
+  .mini-profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+.mini-profile__picture {
+  width: 25%;
+  margin: 0 0.5em 0 0;
+}
+@media screen and (max-width: 42.5rem) {
+  .mini-profile__picture {
+    width: 75%;
+    margin: 0 0 0.5em;
+  }
+}
+.mini-profile__name {
+  margin: 0;
+}
+.mini-profile__role {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 80%;
+}
+.mini-profile__link {
+  font-size: 80%;
+}
+.profile-item {
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+.profile-item__picture {
+  float: left;
+  margin-right: 1em;
+  width: 25%;
 }
 /* -------------------------------------- */
 /* ==for the dirty code                   */

@@ -1,0 +1,56 @@
+.mini-profiles {
+	@media screen and (max-width: 42.5rem) {
+		display: flex;
+	}
+}
+
+
+.mini-profiles-more {
+	font-size: 80%;
+
+	@media screen and (max-width: 42.5rem) {
+		text-align: center;
+		font-size: 100%;
+	}
+}
+
+
+.mini-profile {
+	display: flex;
+	margin-bottom: 1em;
+	
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media screen and (max-width: 42.5rem) {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+.mini-profile__picture {
+	width: 25%;
+	margin: 0 0.5em 0 0;
+	
+	@media screen and (max-width: 42.5rem) {
+		width: 75%;
+		margin: 0 0 0.5em;
+	}
+}
+
+.mini-profile__name {
+	margin: 0;
+}
+
+.mini-profile__role {
+	margin: 0;
+	opacity: 0.8;
+	
+	font-size: 80%;
+}
+
+.mini-profile__link {
+	font-size: 80%;
+}

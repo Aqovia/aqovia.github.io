@@ -60,9 +60,10 @@
 .uneven-2-parts-content {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	
 	& > *:first-child {
-		width: 60%;
+		width: 59%;
 		
 		@media screen and (max-width: 42.5rem) {
 			width: 100%;
@@ -70,10 +71,44 @@
 	}
 
 	& > *:last-child {
-		width: 40%;
+		width: 39%;
 		
 		@media screen and (max-width: 42.5rem) {
 			width: 100%;
+		}
+	}
+}
+
+
+.up-to-3-columns-collapsible-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	& > * {
+		width: 32%;
+		
+		@media screen and (min-width: 450px) and (max-width: 720px) {
+			width: 48%
+		}
+
+		@media screen and (max-width: 449px) {
+			width: 100%
+		}
+	}
+}
+
+
+.up-to-2-columns-collapsible-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+	& > * {
+		width: 49%;
+
+		@media screen and (max-width: 600px) {
+			width: 100%
 		}
 	}
 }
