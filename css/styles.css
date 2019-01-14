@@ -891,11 +891,21 @@ h5 {
   list-style-type: none;
 }
 .site-nav__item {
+  font-size: 3.63636364vw;
   display: inline-block;
   margin-right: 1.5em;
-  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2;
+}
+@media screen and (max-width: 27.5rem) {
+  .site-nav__item {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 34.375rem) {
+  .site-nav__item {
+    font-size: 1.25rem;
+  }
 }
 .site-nav__item a {
   padding-bottom: 0.25em;
