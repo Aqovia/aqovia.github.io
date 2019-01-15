@@ -1,0 +1,39 @@
+.social-tag-bar {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.social-tag-bar__item {
+	flex: 0;
+	margin-right: 0.5em;
+}
+
+.social-tag {
+	display: flex;
+	align-items: center;
+	
+	text-decoration: none;
+}
+
+.social-tag__icon {
+	width: 1em;
+	height: 1em;
+	
+	color: #4c4c4c;
+	
+	&:hover {
+		&.-linkedIn {
+			color: #0274b3;
+		}
+
+		&.-twitter {
+			color: #1da1f2;
+		}
+	}
+}
+
+.social-tag__icon-tint {
+	fill: currentColor;
+}
