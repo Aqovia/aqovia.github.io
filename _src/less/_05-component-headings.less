@@ -54,3 +54,14 @@
 		color: @accent-color;
 	}
 }
+
+
+.label-heading {
+	.mixin-dynamic-font-size(1rem, 1.25rem,@to-viewport: 43.75rem);
+	font-weight: 500;
+	color: @bg-color;
+	
+	.emphasised-bg-section & {
+		color: @accent-color;
+	}
+}
