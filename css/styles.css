@@ -857,6 +857,34 @@ h5 {
     width: 100%;
   }
 }
+
+.uneven-2-parts-content-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.uneven-2-parts-content-2 > *:first-child {
+  width: 50%;
+}
+@media screen and (max-width: 42.5rem) {
+  .uneven-2-parts-content-2 > *:first-child {
+    width: 100%;
+  }
+}
+.uneven-2-parts-content-2 > *:last-child {
+  width: 50%;
+}
+@media screen and (max-width: 42.5rem) {
+  .uneven-2-parts-content-2 > *:last-child {
+    width: 100%;
+  }
+}
+
 .up-to-3-columns-collapsible-list {
   display: -webkit-box;
   display: -ms-flexbox;
