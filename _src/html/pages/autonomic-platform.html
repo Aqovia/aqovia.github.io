@@ -1,14 +1,59 @@
-{% extends "layout.html" %}
-{% set menuItem = "work" %}
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+		<meta charset="UTF-8">
+		<title>Autonomic platform by Aqovia</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/styles.css" media="all">
 
-{% block title %}Autonomic platform by Aqovia{% endblock %}
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway:500,700,900" rel="stylesheet">
 
-{% block content %}
+		<link rel="icon" type="image/png" href="img/favicon-aqovia.png">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47090251-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-47090251-1');
+		</script>
+</head>
+<body>
+	<header class="main-header">
+		<div class="main-header__edges">
+			
+			<div class="main-header__branding">
+				<a href="index.html" class="main-header__home-link">
+					<img src="img/aqovia-logo.svg" alt="Aqovia logo" class="main-header__logo">
+				</a>
+				
+				<a href="contact.html" class="main-header__contact">Contact us</a>
+			</div>
+			
+			
+			
+<nav class="site-nav">
+	<ul class="site-nav__level-01">
+		<li class="site-nav__item "><a href="about.html">About Us</a></li>
+		<li class="site-nav__item "><a href="team.html">Leadership</a></li>
+		<li class="site-nav__item  -active "><a href="what-we-do.html">What we do</a></li>
+	</ul>
+</nav>
+
+			
+		</div>
+	</header>
+
+	<div class="main-content">			
+		<!-- You write code for this content block in another file -->
+	  
 
 <section>
 	<div class="edged-section">
 		<h1 class="page-title">A1 Autonomic Platform</h1>
-		<p class="page-title-subtext">Streamline and scale with the Aqovia A1 Autonomic Platform. Moving Telcos forward with Artificial Intelligence based operations.</p>
+		<p class="page-title-subtext">Streamline and scale with the Aqovia A1 Autonomic Platform. Moving companies forward with Artificial Intelligence based operations.</p>
 	</div>
 </section>
 
@@ -25,7 +70,7 @@
 <section class="default-bg-section">
 	<div class="edged-section">
 		<h2 class="bold-heading">Why use an autonomic platform ?</h2>
-		<h3 class="accent-text">Aqovia A1 - Autonomic Platform is applicable to various solutions and sectors, including Telco, Enterprise, Finance, Trade and Government.</h3>
+		<h3 class="accent-text">Aqovia A1 - Autonomic Platform is applicable to various solutions and sectors, including Green Energy, Telco, Enterprise, Finance, Trade and Government.</h3>
 
 		<p>
 			In the case of IoT, we know that 5G networks will facilitate a wide array of business opportunities in the near future but with that potential, comes complexity and cost challenges, including:
@@ -144,9 +189,59 @@
 	</div>
 </section>
 
-{% include "partials/clients-logo.html" %}
+<section class="alternate-bg-section">
+	<div class="edged-section">
+		<h2 class="bold-heading">Our leading clients</h2>
+		
+		<ul class="clients-logo">
+			
+			<li class="clients-logo__item">
+			  <img src="img/clients/itv.svg" alt="ITV">
+			</li>
+			
+			<li class="clients-logo__item">
+			  <img src="img/clients/bbc.svg" alt="BBC">
+			</li>
+			
+			<li class="clients-logo__item">
+			  <img src="img/clients/interxion.svg" alt="Interxion">
+			</li>
+			
+			<li class="clients-logo__item">
+			  <img src="img/clients/vodafone.svg" alt="Vodafone">
+			</li>
+			
+			<li class="clients-logo__item">
+			  <img src="img/clients/sky.svg" alt="Sky">
+			</li>
+			
+			<li class="clients-logo__item">
+			  <img src="img/clients/pearson.svg" alt="Pearson">
+			</li>
+			
+		</ul>
+	</div>
+</section>
 
-{% endblock %}
 
-{% block footerHeading %}If you’d like to find out more about the Autonomic Platform.{% endblock %}
-{% block footerDescription %}Please get in touch with a member of our team today.{% endblock %}
+			
+	</div>
+
+	<footer class="main-footer">
+		<section class="main-footer__contact">
+			<div class="edged-section short-copy-emphasis">
+				<p class="main-footer__heading">If you’d like to find out more about the Autonomic Platform.</p>
+				<p>Please get in touch with a member of our team today.</p>
+				<a href="contact.html" class="main-btn">Contact Us</a>
+			</div>			
+		</section>
+
+		<section class="main-footer__legal">
+			<p>© 2008 - 2018 Aqovia UK Limited. Registered in England and Wales (Reg. No. 06846037).</p>
+		</section>
+	</footer>
+	
+
+	<script src="js/scripts.js" type="text/javascript"></script>
+</body>
+</html>
