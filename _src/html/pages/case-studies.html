@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% set menuItem = "case-studies" %}
+
+{% block title %}Aqovia's Case Studies{% endblock %}
+
+{% block content %}
+<section>
+	<div class="edged-section">
+		<h1 class="page-title">Case Studies</h1>
+		<p class="page-title-subtext">Aqovia delivers innovative digital solutions for a variety of key markets and major clients.</p>		
+	</div>
+</section>
+
+
+<section class="default-bg-section">
+	<div class="edged-section">
+
+		<ul class="work-listing">
+			<li class="work-listing__item">
+				<img src="img/wind-turbine-icon.svg" alt="" class="work-listing__visual">
+
+				<div class="work-listing__description">
+					<h3 class="work-listing__heading">Green Energy Incident Management and Predictive Maintenance</h3>
+					<p>Use Aqovia A1 Autonomic Platform artificial intelligence (AI) algorithms to manage your green energy generation assets.</p>
+					<p><a href="green-energy-incident-management.html">Read more</a></p>
+				</div>
+			</li>
+		</ul>
+
+		
+	</div>
+</section>
+
+
+
+{% include "partials/clients-logo.html" %}
+
+{% include "partials/testimonials.html" %}
+
+{% endblock %}
