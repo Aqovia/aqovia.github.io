@@ -13,10 +13,10 @@
 }
 
 .site-nav__item {
-	.mixin-dynamic-font-size(1rem, 1.25rem,@from-viewport: 27.5rem);
+	.mixin-dynamic-font-size(.7rem, 1.25rem,@from-viewport: 20rem);
 	display: inline-block;
 	
-	margin-right: 1.5em;
+	margin-right: 1.25em;
 	
 	font-weight: 700;
 	line-height: 1.2;
@@ -37,5 +37,9 @@
 		a {
 			border-bottom: 1px solid @accent-color;
 		}
+	}
+
+	&:last-child {
+		margin-right: 0;
 	}
 }
