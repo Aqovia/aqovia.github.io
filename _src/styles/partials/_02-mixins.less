@@ -18,10 +18,10 @@
 	
 	@unitless-from-viewport: unit(@from-viewport);
 	
-	@calculated-to-viewport: @from-viewport * @to / @from;
+	@calculated-to-viewport: (@from-viewport * @to / @from);
 	@unitless-to-viewport: unit(@calculated-to-viewport);
 
-	@dynamic-size: 100vw * @unitless-from-size / @unitless-from-viewport;
+	@dynamic-size: (100vw * @unitless-from-size / @unitless-from-viewport);
 
 	font-size: @dynamic-size;
 	
@@ -42,10 +42,10 @@
 	
 	@unitless-to-viewport: unit(@to-viewport);
 	
-	@calculated-from-viewport: @to-viewport * @from / @to;
+	@calculated-from-viewport: (@to-viewport * @from / @to);
 	@unitless-from-viewport: unit(@calculated-from-viewport);
 
-	@dynamic-size: 100vw * @unitless-to-size / @unitless-to-viewport;
+	@dynamic-size: (100vw * @unitless-to-size / @unitless-to-viewport);
 
 	font-size: @dynamic-size;
 	

@@ -1,0 +1,41 @@
+/* -------------------------------------- */
+/* ==for the dirty code                   */
+/* -------------------------------------- */
+// .mixin-test(@from, @to, @to-viewport) {
+//     @unitless-from-size: unit(@from);
+//     @unitless-to-size: unit(@to);
+
+//     @unitless-to-viewport: unit(@to-viewport);
+
+//     @calculated-from-viewport: (@to-viewport * @from / @to);
+
+//     font-size: @from;
+//     line-height: @calculated-from-viewport;
+// }
+
+// .mixin-dynamic-font-size(@from,@to,@from-viewport: 0,@to-viewport: 0) when (@to-viewport > 0) {
+	
+// 	@unitless-from-size: unit(@from);
+// 	@unitless-to-size: unit(@to);
+	
+// 	@unitless-to-viewport: unit(@to-viewport);
+	
+// 	@calculated-from-viewport: @to-viewport * @from / @to;
+// 	@unitless-from-viewport: unit(@calculated-from-viewport);
+
+// 	@dynamic-size: 100vw * @unitless-to-size / @unitless-to-viewport;
+
+// 	font-size: @dynamic-size;
+	
+// 	@media screen and (max-width: @calculated-from-viewport) {
+// 		font-size: @from;
+// 	}
+
+// 	@media screen and (min-width: @to-viewport) {
+// 		font-size: @to;
+// 	}
+// }
+
+// .test {
+//     .mixin-test(1rem,3rem,20rem);
+// }
