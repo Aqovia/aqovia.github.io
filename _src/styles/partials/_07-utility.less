@@ -64,6 +64,14 @@
 			}
 		}
 	}
+
+	&.-stackable {
+		flex-wrap: wrap;
+
+		& > * {
+			flex: 1 0 var(--u-row-flex-basis, 8em);
+		}
+	}
 	
 	@media screen and (max-width: 600px) {
 		&.-stacks-at-600px {
@@ -124,16 +132,32 @@
 	margin-bottom: 1rem;
 }
 
+.u-margin-top-none {
+	margin-top: 0;
+}
+
 .u-padding-medium {
 	padding: 1rem;
+}
+
+.u-padding-bottom-none {
+	padding-bottom: 0
 }
 
 .u-padding-bottom-medium {
 	padding-bottom: 1rem;
 }
 
+.u-padding-top-none {
+	padding-top: 0
+}
+
 
 
 .u-bottom-spacer {
 	border-bottom: 1rem solid #fff;
+}
+
+.u-custom-max-width {
+	max-width: ~"min(var(--custom-max-width, 300px), 100%)";
 }
