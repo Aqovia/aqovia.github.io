@@ -952,20 +952,10 @@ video {
   }
 }
 .work-listing {
-  font-size: 3.42857143vw;
   list-style-type: none;
   margin: 1em 0;
   padding: 0;
-}
-@media screen and (max-width: 32.8125rem) {
-  .work-listing {
-    font-size: 1.125rem;
-  }
-}
-@media screen and (min-width: 43.75rem) {
-  .work-listing {
-    font-size: 1.5rem;
-  }
+  font-size: 1em;
 }
 .work-listing__item {
   display: flex;
@@ -985,6 +975,7 @@ video {
 .work-listing__visual {
   flex: 12.5rem 0 0;
   height: auto;
+  max-width: 12.5rem;
 }
 @media screen and (max-width: 37rem) {
   .work-listing__visual {
@@ -995,19 +986,19 @@ video {
   flex: 1;
 }
 .work-listing__heading {
-  font-size: 4.57142857vw;
+  font-size: 3.42857143vw;
   margin: 0;
   font-weight: 700;
   color: #EE7810;
 }
-@media screen and (max-width: 27.34375rem) {
+@media screen and (max-width: 36.45833333rem) {
   .work-listing__heading {
-    font-size: 1.25rem;
+    font-size: 1.25em;
   }
 }
 @media screen and (min-width: 43.75rem) {
   .work-listing__heading {
-    font-size: 2rem;
+    font-size: 1.5em;
   }
 }
 .work-listing__link {
@@ -1295,6 +1286,9 @@ video {
 .u-text-center {
   text-align: center;
 }
+.u-text-left {
+  text-align: left;
+}
 .u-smaller-text {
   font-size: 87.5%;
 }
@@ -1336,6 +1330,9 @@ video {
 }
 .u-padding-top-none {
   padding-top: 0;
+}
+.u-padding-top-medium {
+  padding-top: 1rem;
 }
 .u-bottom-spacer {
   border-bottom: 1rem solid #fff;

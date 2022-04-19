@@ -1,9 +1,10 @@
 .work-listing {
-	.mixin-dynamic-font-size(1.125rem,1.5rem,@to-viewport: 43.75rem);
 	list-style-type: none;
 	
 	margin: 1em 0;
 	padding: 0;
+
+	font-size: 1em;
 }
 
 .work-listing__item {
@@ -27,6 +28,7 @@
 .work-listing__visual {
 	flex: 12.5rem 0 0;
 	height: auto;
+	max-width: 12.5rem;
 	
 	@media screen and (max-width: 37rem) {
 		width: 34%;
@@ -38,7 +40,7 @@
 }
 
 .work-listing__heading {
-	.mixin-dynamic-font-size(1.25rem,2rem,@to-viewport: 43.75rem);
+	.mixin-dynamic-font-size(1.25em,1.5em,@to-viewport: 43.75rem);
 	margin: 0;
 	
 	font-weight: 700;
