@@ -8,16 +8,25 @@
 	margin: 1em 0 0;
 }
 
-.testimonials__item {	
-	width: 30%;
+.testimonials__item {
+	&:not(:only-child) {
+		width: 30%;
+		
+		@media screen and (max-width: 800px) {
+			width: 46%;
+		}
 	
-	@media screen and (max-width: 800px) {
-		width: 46%;
+		@media screen and (max-width: 520px) {
+			margin-bottom: 1em;
+			width: 100%;
+		}
 	}
 
-	@media screen and (max-width: 520px) {
-		margin-bottom: 1em;
+	&:only-child {
 		width: 100%;
+		max-width: 34em;
+
+		margin: auto;
 	}
 }
 
