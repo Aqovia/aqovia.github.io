@@ -1288,6 +1288,26 @@ video {
     width: 100%;
   }
 }
+.u-layout.-flex {
+  display: flex;
+  flex-wrap: wrap;
+  /* 1 : opinionated min-width default value that should be changed depending on what is the most convenient for the project, we are using min-width instead of flex-basis so that the grow factor can be in proportion of the parent width */
+}
+.u-layout.-flex > * {
+  flex: var(--layout--flex-grow, 1) 0 0;
+  min-width: var(--layout-item--min-width, 12.5rem);
+  /* 1 */
+  max-width: 100%;
+}
+.u-layout.-flex > *.u-layout__accent {
+  --layout--flex-grow: 2;
+}
+.u-layout.-flex > *.u-layout__accent-strong {
+  --layout--flex-grow: 3;
+}
+.u-layout.-has-gap {
+  gap: var(--layout--gap, 1rem);
+}
 .u-text-center {
   text-align: center;
 }
