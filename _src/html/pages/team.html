@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "templates/layout.html" %}
 {% set menuItem = "team" %}
 
 {% block title %}The team at Aqovia{% endblock %}
@@ -23,48 +23,51 @@
 	<div class="edged-section">
 		<h2 class="bold-heading">Executive leadership</h2>
 
-		<div class="profiles">
-			<div class="profile-item">
-				<div class="profile-item__picture">
-					<img src="img/muhammad-malik.jpg" alt="Muhammad Malik, CEO and founder of Aqovia">
-				</div>
-
-				<div class="profile-item__description">
-					<h3>Muhammad Malik</h3>
-					<p>CEO</p>
-
-					<p>Muhammad Malik is CEO and founder of Aqovia.</p>
-
-					<p>Muhammad’s professional career started at Peoples Bank US in late 1998. Muhammad joined U.S. telecommunications provider Sprint in 2001 and transferred from the U.S. to London, as Head of Network Planning and Engineering for Sprint Europe, Mid-East and Africa.</p>
-
-					<p>After leading several large scale multi-year telecommunication projects at Sprint and in early 2008, Muhammad founded a joint venture with Cable&Wireless (C&W) and newly founded Aqovia.</p>
-
-					<p>Muhammad is currently focused on several applied innovation, social responsibility and new infrastructure ventures, including:</p>
-
-					<ul>
-						<li>Banking</li>
-						<li>New energy infrastructure plants, such as energy from waste</li>
-					</ul>
-
-					<p>He received his bachelors in Business Administration and in Management Information Systems from Ottawa University. </p>
-				</div>
+		<div class="profile-item">
+			<div class="profile-item__picture">
+				<img src="img/muhammad-malik.jpg" alt="Muhammad Malik, CEO and founder of Aqovia">
 			</div>
 
+			<div class="profile-item__description">
+				<h3 id="muhammad-malik">Muhammad Malik</h3>
+				<p>CEO</p>
 
-			<!-- <div class="profile-item">
-				<div class="profile-item__picture">
-					<img src="img/mustafa-arif.jpg" alt="Mustafa Arif, Principal Architect at Aqovia">
-				</div>
-				
-				<div class="profile-item__description">
-					<h3>Mustafa Arif</h3>
-					<p>Principal Architect</p>
+				<p>Muhammad Malik is CEO and founder of Aqovia.</p>
 
-					<p>Insert text here</p>
-				</div>
-			</div> -->
+				<p>Muhammad’s professional career started at Peoples Bank US in late 1998. Muhammad joined U.S. telecommunications provider Sprint in 2001 and transferred from the U.S. to London, as Head of Network Planning and Engineering for Sprint Europe, Mid-East and Africa.</p>
+
+				<p>After leading several large scale multi-year telecommunication projects at Sprint and in early 2008, Muhammad founded a joint venture with Cable&Wireless (C&W) and newly founded Aqovia.</p>
+
+				<p>Muhammad is currently focused on several applied innovation, social responsibility and new infrastructure ventures, including:</p>
+
+				<ul>
+					<li>Banking</li>
+					<li>New energy infrastructure plants, such as energy from waste</li>
+				</ul>
+
+				<p>He received his bachelors in Business Administration and in Management Information Systems from Ottawa University. </p>
+			</div>
 		</div>
+	
+	</div>
+</section>
 
+<section class="alternate-bg-section">
+	<div class="edged-section">
+		<div class="profile-item">
+			<div class="profile-item__picture">
+				<img src="img/john-osullivan.jpg" alt="John O'Sullivan, Director at Aqovia">
+			</div>
+			
+			<div class="profile-item__description">
+				<h3 id="john-osullivan">John O'Sullivan</h3>
+				<p>Director</p>
+
+				<p>John has been director at Aqovia since 2009, with executive leadership roles including Managing Director at Nexala, a Trimble company. Prior to joining Nexala, John has served in senior management positions for a number of leading enterprises, including KPMG and HP with responsibility and remit across Ireland, the UK, pan-Europe and the Middle East.</p>
+
+				<p>John graduated from University College Cork with a Bachelors of Commerce degree and is a Fellow of the Institute of Chartered Accountants (FCA).</p>
+			</div>
+		</div>
 	
 	</div>
 </section>
@@ -72,7 +75,7 @@
 
 <section class="emphasised-bg-section">
 	<div class="edged-section">
-		<p>Our specialised skills include:</p>
+		<p class="default-heading">Our specialised skills include:</p>
 		
 		<ul class="up-to-3-columns-collapsible-list">
 			<li>Software development</li>
@@ -98,8 +101,8 @@
 </section>
 
 
-{% include "partials/clients-logo.html" %}
+{% include "templates/partials/clients-logo.html" %}
 
-{% include "partials/testimonials.html" %}
+{% include "templates/partials/testimonials.html" %}
 
 {% endblock %}

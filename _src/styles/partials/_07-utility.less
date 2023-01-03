@@ -1,0 +1,199 @@
+/* -------------------------------------- */
+/* ==utility classes                      */
+/* -------------------------------------- */
+
+/* the only place where the use of !important may be tolerated */
+
+.u-pull-left,
+.u-pull-right {
+	
+	&.-stackable {
+		@media screen and (max-width: 37.5rem) {
+			display: block;
+			
+			margin: 1em auto;
+			
+			float: none;
+		}
+	}
+
+	@media screen and (min-width: 601px) {
+		max-width: 50%;
+	}
+}
+
+.u-pull-left {
+	margin: 0.5em 0.5em 0.5em 0;
+	
+	float: left;
+	
+}
+
+.u-pull-right {
+	margin: 0.5em 0 0.5em 0.5em;
+	
+	float: right;
+}
+
+
+
+.u-row {
+	display: flex;
+	justify-content: space-around;
+	
+	&.-three-items-stackable {
+		flex-wrap: wrap;
+
+		& > * {
+			width: 31%;
+			
+			@media screen and (max-width: 46.25rem) {
+				width: 100%;
+			}
+		}
+	}
+	
+	&.-four-items-stackable-in-two {
+		flex-wrap: wrap;
+		
+		& > * {
+			width: 20%;
+			
+			@media screen and (max-width: 46.25rem) {
+				width: 45%;
+			}
+		}
+	}
+
+	&.-stackable {
+		flex-wrap: wrap;
+
+		& > * {
+			flex: 1 0 var(--u-row-flex-basis, 8em);
+		}
+	}
+	
+	@media screen and (max-width: 600px) {
+		&.-stacks-at-600px {
+			flex-wrap: wrap;
+			
+			& > * {
+				width: 100%;	
+			}
+		}
+	}
+}
+
+
+
+.u-layout {
+	&.-flex {
+	  display: flex;
+	  flex-wrap: wrap;
+  
+	  & > * {
+		flex: var(--layout--flex-grow, 1) 0 0;
+		min-width: var(--layout-item--min-width, 12.5rem); /* 1 */
+		max-width: 100%;
+  
+		&.u-layout__accent {
+		  --layout--flex-grow: 2;
+		}
+  
+		&.u-layout__accent-strong {
+		  --layout--flex-grow: 3;
+		}
+	  }
+	  /* 1 : opinionated min-width default value that should be changed depending on what is the most convenient for the project, we are using min-width instead of flex-basis so that the grow factor can be in proportion of the parent width */
+	}
+  
+	&.-has-gap {
+	  gap: var(--layout--gap, 1rem);
+	}
+  }
+
+
+
+.u-text-center {
+	text-align: center;
+}
+
+.u-text-left {
+	text-align: left;
+}
+
+.u-smaller-text {
+	font-size: 87.5%;
+}
+
+
+
+.u-centered-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.u-block {
+	display: block;
+}
+
+.u-overflow-clear {
+	overflow: hidden;
+}
+
+
+
+.u-full-width {
+	width: 100%;
+}
+
+
+
+/* Margin and padding */
+.u-margin-none {
+	margin: 0;
+}
+
+.u-margin-bottom-large {
+	margin-bottom: 2rem;
+}
+
+.u-margin-bottom-medium {
+	margin-bottom: 1rem;
+}
+
+.u-margin-top-none {
+	margin-top: 0;
+}
+
+.u-padding-medium {
+	padding: 1rem;
+}
+
+.u-padding-bottom-none {
+	padding-bottom: 0;
+}
+
+.u-padding-bottom-medium {
+	padding-bottom: 1rem;
+}
+
+.u-padding-top-none {
+	padding-top: 0;
+}
+
+.u-padding-top-medium {
+	padding-top: 1rem;
+}
+
+
+
+.u-bottom-spacer {
+	border-bottom: 1rem solid #fff;
+}
+
+.u-custom-max-width {
+	max-width: ~"min(var(--custom-max-width, 300px), 100%)";
+}
