@@ -1,0 +1,39 @@
+{% extends "templates/layout.html" %} {% set menuItem = "cookie" %} {% block title %}Cookie Policy{% endblock %} {% block content %}
+<section>
+    <div class="edged-section">
+        <p class="page-title">Cookie Policy</p>
+        <h1 class="page-title-subtext">Aqovia uses cookies to distinguish you from other users of our website. This helps us to improve your experience when browsing our website and allows us to enhance our site. By continuing to browse our site, you agree to our use of cookies.</h1>
+    </div>
+</section>
+
+<section class="default-bg-section">
+    <div class="edged-section">
+
+        <h2 class="small-heading">What Are Cookies?</h2>
+        <p>Cookies are small files stored on your browser or device by websites you visit. They allow websites to recognise your device and store some information about your preferences or past actions.</p>
+
+        <h2 class="small-heading">How We Use Cookies</h2>
+        <p>Aqovia uses cookies to:</p>
+        <ul class="up-to-1-columns-collapsible-list">
+            <li>Ensure the website functions as expected (essential cookies).</li>
+            <li>Collect analytical data about how visitors interact with the site (performance cookies).</li>
+            <li>Remember your preferences, such as language settings (functionality cookies).</li>
+            <li>Track engagement with online marketing (advertising cookies).</li>
+        </ul>
+
+        <h2 class="small-heading">Types of Cookies We Use</h2>
+        <ul class="up-to-1-columns-collapsible-list">
+            <li><strong>Session Cookies:</strong> These are temporary and deleted once you close your browser.</li>
+            <li><strong>Persistent Cookies:</strong> These remain on your device until they expire or are deleted manually.</li>
+            <li><strong>Third-Party Cookies</strong> These are cookies set by a domain other than aqovia.com, often used for analytics or advertising.</li>
+        </ul>
+
+        <h2 class="small-heading">Managing Cookies</h2>
+        <p>You can manage or delete cookies as you prefer, using browser settings to block some or all cookies. Be aware that disabling cookies may affect website functionality.</p>
+        <p>For more information about cookies and how to control or delete them, please visit <a href="https://www.allaboutcookies.org" target="_blank" rel="nofollow">allaboutcookies.org</a>.</p>
+
+    </div>
+</section>
+
+
+{% include "templates/partials/clients-logo.html" %} {% include "templates/partials/testimonials.html" %} {% endblock %}
