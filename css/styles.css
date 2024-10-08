@@ -912,6 +912,46 @@ video {
 .site-nav__item:last-child {
   margin-right: 0;
 }
+.footer-nav {
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+.footer-nav .site-nav__level-01 {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.footer-nav .site-nav__item {
+  font-size: 3.5vw;
+  display: inline-block;
+  margin-right: 1.25em;
+  font-weight: 500;
+  line-height: 1.2;
+}
+@media screen and (max-width: 20rem) {
+  .footer-nav .site-nav__item {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 28.57142857rem) {
+  .footer-nav .site-nav__item {
+    font-size: 1rem;
+  }
+}
+.footer-nav .site-nav__item a {
+  padding-bottom: 0.25em;
+  text-decoration: none;
+  color: #fff;
+}
+.footer-nav .site-nav__item a:hover {
+  color: #FCBF00;
+}
+.footer-nav .site-nav__item.-active a {
+  border-bottom: 1px solid #FFD370;
+}
+.footer-nav .site-nav__item:last-child {
+  margin-right: 0;
+}
 .home-hero {
   position: relative;
   padding: 0 0 3em;

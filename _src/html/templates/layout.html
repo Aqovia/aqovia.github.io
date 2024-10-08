@@ -67,6 +67,7 @@
         </section>
 
         <section class="main-footer__legal">
+            {% import 'templates/macros/footer-nav-macro.html' as nav %} {{ nav.active(menuItem) }}
             <p>© 2008 - 2024 Aqovia UK Limited. Registered in England and Wales (Reg. No. 06846037).</p>
         </section>
     </footer>
