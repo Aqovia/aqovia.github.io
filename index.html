@@ -6,6 +6,7 @@
     <title>Aqovia - Deliver innovative digital solutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css" media="all">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:500,700,900" rel="stylesheet">
@@ -35,18 +36,103 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="main-header__edges">
 
-            <div class="main-header__branding">
+     
+<header class="main-header header" id="header">
+    <div class="main-header__edges">
+        <nav class="navbar container">
+            <div class="navbar-inner">
                 <a href="index.html" class="main-header__home-link">
                     <img src="img/aqovia-logo.svg" alt="Aqovia logo" class="main-header__logo">
                 </a>
-
-                <a href="contact.html" class="main-header__contact">Contact us</a>
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
             </div>
-
-             
+            <div class="navbar-block" id="menu">
+                <ul class="menu">
+                    <!--    
+                    <li class="menu-item "><a href="about.html" class="menu-link site-nav__item">About Us</a></li>
+                    <li class="menu-item "><a href="team.html" class="menu-link site-nav__item">Leadership</a></li>
+                    <li class="menu-item "><a href="what-we-do.html" class="menu-link site-nav__item">What we do</a></li>
+                    <li class="menu-item "><a href="case-studies.html" class="menu-link site-nav__item">Case Studies</a></li>
+                    <li class="menu-item "><a href="https://careers.aqovia.com/" class="menu-link site-nav__item">Careers</a></li>
+                    <li class="menu-item "><a href="cloud-blueprint.html" class="menu-link site-nav__item">Cloud Blueprint</a></li>
+                    -->
+                    <li class="menu-item dropdown ">
+                        <span class="dropdown-toggle menu-link">
+                      About <i class="bx bx-chevron-down"></i>
+                    </span>
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-buildings"></i></span>
+                                        <span class="text-base font-medium">The company</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="about.html" class="menu-link dropdown-link">About Us</a></li>
+                                        <li class="menu-item "><a href="team.html" class="menu-link dropdown-link">Leadership</a></li>
+                                        <li class="menu-item "><a href="https://careers.aqovia.com/" class="menu-link dropdown-link" target="_blank">Careers</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-code"></i></span>
+                                        <span class="text-base font-medium">Our work</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="what-we-do.html" class="menu-link dropdown-link">What we do</a></li>
+                                        <li class="menu-item "><a href="case-studies.html" class="menu-link dropdown-link">Case Studies</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item dropdown">
+                        <span class="dropdown-toggle menu-link">
+                      Cloud Solutions <i class="bx bx-chevron-down"></i>
+                    </span>
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-cloud"></i></span>
+                                        <span class="text-base font-medium">Future-Proofing</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="cloud-blueprint.html" class="menu-link dropdown-link">Cloud Blueprint</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-cloud"></i></span>
+                                        <span class="text-base font-medium">Unlock the True Potential</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="enterprise-cloud-optimised.html" class="menu-link dropdown-link">Enterprise Cloud Optimise</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-cloud"></i></span>
+                                        <span class="text-base font-medium">Power of Managed Hybrid Cloud</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="managed-enterprise-hybrid-cloud.html" class="menu-link dropdown-link">Managed Enterprise Hybrid Cloud</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item"><a href="contact.html" class="menu-link">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+</header>
+<!--
 <nav class="site-nav">
     <ul class="site-nav__level-01">
         <li class="site-nav__item "><a href="about.html">About Us</a></li>
@@ -54,88 +140,96 @@
         <li class="site-nav__item "><a href="what-we-do.html">What we do</a></li>
         <li class="site-nav__item "><a href="case-studies.html">Case Studies</a></li>
         <li class="site-nav__item "><a href="https://careers.aqovia.com/">Careers</a></li>
+        <li class="site-nav__item  -active "><a href="cloud-blueprint.html">Cloud Blueprint</a></li>
     </ul>
 </nav>
+-->
 
-
-        </div>
-    </header>
 
     <div class="main-content">
         <!-- You write code for this content block in another file -->
         
 <section class="home-hero">
-	<div class="edged-section">
-		
-		<h1 class="home-hero__statement">
-			<span class="home-hero__text">Delivering innovative and bespoke</span>
-			<span class="home-hero__accent-text">Digital Solutions</span>
-			<span class="home-hero__text">to excel your business</span>
-		</h1>
-		<a href="what-we-do.html" class="main-btn -big">See what we do</a>
-	
-	</div>
+    <div class="edged-section">
+
+        <h1 class="home-hero__statement">
+            <span class="home-hero__text">Delivering innovative and bespoke</span>
+            <span class="home-hero__accent-text">Digital Solutions</span>
+            <span class="home-hero__text">to excel your business</span>
+        </h1>
+        <a href="what-we-do.html" class="main-btn -big">See what we do</a>
+
+    </div>
 </section>
 
 <section class="transition-to-default-bg-section">
-	<div class="short-copy-emphasis edged-section">
-		<p class="u-margin-none">Our expert scientists, engineers and analysts collaborate with you to create value and user centric solutions. Read our story</p>
-		<p class="u-margin-none"><a href="about.html">Read our story</a></p>
-	</div>
+    <div class="short-copy-emphasis edged-section">
+        <p class="u-margin-none">Our expert scientists, engineers and analysts collaborate with you to create value and user centric solutions. Read our story</p>
+        <p class="u-margin-none"><a href="about.html">Read our story</a></p>
+    </div>
 </section>
 
 <section class="default-bg-section">
-	<div class="edged-section">
-		<h2 class="bold-heading">What we do</h2>
+    <div class="edged-section">
+        <h2 class="bold-heading">What we do</h2>
 
-		<ul class="work-listing">
-			<li class="work-listing__item">
-				<img src="img/wind-turbine-icon.svg"  class="work-listing__visual">
+        <ul class="work-listing">
+            <li class="work-listing__item">
+                <img src="img/aqovia-cloud.svg" class="work-listing__visual">
 
-				<div class="work-listing__description">
-					<h3 class="work-listing__heading">Energy Asset Management</h3>
-					<p>Meet your clients' renewable energy needs with our Energy Asset Management platform.</p>
-					<p><a href="energy-asset-management.html">Read more</a></p>
-				</div>
-			</li>
+                <div class="work-listing__description">
+                    <h3 class="work-listing__heading">Cloud Solutions</h3>
+                    <p>End-to-End Cloud Optimisation and Migration</p>
+                    <p><a href="cloud-blueprint.html">Cloud Blueprint</a> | <a href="enterprise-cloud-optimised.html">Enterprise Cloud Optimise</a> | <a href="managed-enterprise-hybrid-cloud.html">Managed Enterprise Hybrid Cloud</a></p>
+                </div>
+            </li>
+            <li class="work-listing__item">
+                <img src="img/wind-turbine-icon.svg" class="work-listing__visual">
 
-			<li class="work-listing__item">
-				<img src="img/a1-platform-icon.svg" alt="" class="work-listing__visual">
+                <div class="work-listing__description">
+                    <h3 class="work-listing__heading">Energy Asset Management</h3>
+                    <p>Meet your clients' renewable energy needs with our Energy Asset Management platform.</p>
+                    <p><a href="energy-asset-management.html">Read more</a></p>
+                </div>
+            </li>
 
-				<div class="work-listing__description">
-					<h3 class="work-listing__heading">A1 Intelligence Management Platform</h3>
-					<p>Introducing an intelligence platform that enables you to understand the ROI of your AI investments and manage and increase the efficiency of your algorithms.</p>
-					<p><a href="a1_intelligence-management-platform.html">Read more</a></p>
-				</div>
-			</li>
+            <li class="work-listing__item">
+                <img src="img/a1-platform-icon.svg" alt="" class="work-listing__visual">
 
-			<li class="work-listing__item">
-				<img src="img/sdn-nvf-icon.svg" alt="" class="work-listing__visual">
+                <div class="work-listing__description">
+                    <h3 class="work-listing__heading">A1 Intelligence Management Platform</h3>
+                    <p>Introducing an intelligence platform that enables you to understand the ROI of your AI investments and manage and increase the efficiency of your algorithms.</p>
+                    <p><a href="a1_intelligence-management-platform.html">Read more</a></p>
+                </div>
+            </li>
 
-				<div class="work-listing__description">
-					<h3 class="work-listing__heading">SDN | NFV</h3>
-					<p>Pioneering Software Defined Networking and Network Function Virtualisation solutions for significant costs savings and increased network capabilities.</p>
-					<p><a href="software-defined-network.html">Read more</a></p>
-				</div>
-			</li>
+            <li class="work-listing__item">
+                <img src="img/sdn-nvf-icon.svg" alt="" class="work-listing__visual">
 
-			<li class="work-listing__item">
-				<img src="img/devops-icon.svg" alt="" class="work-listing__visual">
+                <div class="work-listing__description">
+                    <h3 class="work-listing__heading">SDN | NFV</h3>
+                    <p>Pioneering Software Defined Networking and Network Function Virtualisation solutions for significant costs savings and increased network capabilities.</p>
+                    <p><a href="software-defined-network.html">Read more</a></p>
+                </div>
+            </li>
 
-				<div class="work-listing__description">
-					<h3 class="work-listing__heading">DevOps</h3>
-					<p>Aqovia DevOps enables fast paced product and technology programme delivery through automation, collaboration and cultural change management.</p>
-					<p><a href="devops.html">Read more</a></p>
-				</div>
-			</li>
+            <li class="work-listing__item">
+                <img src="img/devops-icon.svg" alt="" class="work-listing__visual">
 
-			<li class="work-listing__link">
-				<a href="what-we-do.html">View all</a>
-			</li>
-		</ul>
+                <div class="work-listing__description">
+                    <h3 class="work-listing__heading">DevOps</h3>
+                    <p>Aqovia DevOps enables fast paced product and technology programme delivery through automation, collaboration and cultural change management.</p>
+                    <p><a href="devops.html">Read more</a></p>
+                </div>
+            </li>
 
-		
-	</div>
+            <li class="work-listing__link">
+                <a href="what-we-do.html">View all</a>
+            </li>
+        </ul>
+
+
+    </div>
 </section>
 
 
@@ -172,9 +266,7 @@
 			
 		</ul>
 	</div>
-</section>
-
-<section class="default-bg-section">
+</section> <section class="default-bg-section">
 	<div class="edged-section">
 		<h2 class="bold-heading">Testimonials</h2>
 
@@ -216,10 +308,7 @@
 			</li>
 		</ul>
 	</div>
-</section>
-
-
-
+</section> 
 
     </div>
 
@@ -242,12 +331,83 @@
     </ul>
 </nav>
 
-            <p>© 2008 - 2024 Aqovia UK Limited. Registered in England and Wales (Reg. No. 06846037).</p>
+            <p>© 2008 - <span id="currentYear"></span> Aqovia UK Limited. Registered in England and Wales (Reg. No. 06846037).</p>
         </section>
     </footer>
 
-
     <script src="js/scripts.js" type="text/javascript"></script>
+    <script>
+        //current year
+        document.addEventListener('DOMContentLoaded', function() {
+            var currentYear = new Date().getFullYear();
+            document.getElementById('currentYear').textContent = currentYear;
+        });
+
+        //menu js
+        // Toggle to show and hide navbar menu
+        const navbarMenu = document.getElementById("menu");
+        const burgerMenu = document.getElementById("burger");
+
+        burgerMenu.addEventListener("click", () => {
+            navbarMenu.classList.toggle("is-active");
+            burgerMenu.classList.toggle("is-active");
+        });
+
+        // Toggle to show and hide dropdown menu
+        const dropdown = document.querySelectorAll(".dropdown");
+
+        dropdown.forEach((item) => {
+            const dropdownToggle = item.querySelector(".dropdown-toggle");
+
+            dropdownToggle.addEventListener("click", () => {
+                const dropdownShow = document.querySelector(".dropdown-show");
+                toggleDropdownItem(item);
+
+                // Remove 'dropdown-show' class from other dropdown
+                if (dropdownShow && dropdownShow != item) {
+                    toggleDropdownItem(dropdownShow);
+                }
+            });
+        });
+
+        // Function to display the dropdown menu
+        const toggleDropdownItem = (item) => {
+            const dropdownContent = item.querySelector(".dropdown-content");
+
+            // Remove other dropdown that have 'dropdown-show' class
+            if (item.classList.contains("dropdown-show")) {
+                dropdownContent.removeAttribute("style");
+                item.classList.remove("dropdown-show");
+            } else {
+                // Added max-height on active 'dropdown-show' class
+                dropdownContent.style.height = dropdownContent.scrollHeight + "px";
+                item.classList.add("dropdown-show");
+            }
+        };
+
+        // Fixed dropdown menu on window resizing
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 992) {
+                document.querySelectorAll(".dropdown-content").forEach((item) => {
+                    item.removeAttribute("style");
+                });
+                dropdown.forEach((item) => {
+                    item.classList.remove("dropdown-show");
+                });
+            }
+        });
+
+        // Fixed navbar menu on window resizing
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 992) {
+                if (navbarMenu.classList.contains("is-active")) {
+                    navbarMenu.classList.remove("is-active");
+                    burgerMenu.classList.remove("is-active");
+                }
+            }
+        });
+    </script>
+
 </body>
 
 </html>

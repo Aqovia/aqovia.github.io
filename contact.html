@@ -6,6 +6,7 @@
     <title>Contact Aqovia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css" media="all">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:500,700,900" rel="stylesheet">
@@ -35,18 +36,103 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="main-header__edges">
 
-            <div class="main-header__branding">
+     
+<header class="main-header header" id="header">
+    <div class="main-header__edges">
+        <nav class="navbar container">
+            <div class="navbar-inner">
                 <a href="index.html" class="main-header__home-link">
                     <img src="img/aqovia-logo.svg" alt="Aqovia logo" class="main-header__logo">
                 </a>
-
-                <a href="contact.html" class="main-header__contact">Contact us</a>
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
             </div>
-
-             
+            <div class="navbar-block" id="menu">
+                <ul class="menu">
+                    <!--    
+                    <li class="menu-item "><a href="about.html" class="menu-link site-nav__item">About Us</a></li>
+                    <li class="menu-item "><a href="team.html" class="menu-link site-nav__item">Leadership</a></li>
+                    <li class="menu-item "><a href="what-we-do.html" class="menu-link site-nav__item">What we do</a></li>
+                    <li class="menu-item "><a href="case-studies.html" class="menu-link site-nav__item">Case Studies</a></li>
+                    <li class="menu-item "><a href="https://careers.aqovia.com/" class="menu-link site-nav__item">Careers</a></li>
+                    <li class="menu-item "><a href="cloud-blueprint.html" class="menu-link site-nav__item">Cloud Blueprint</a></li>
+                    -->
+                    <li class="menu-item dropdown ">
+                        <span class="dropdown-toggle menu-link">
+                      About <i class="bx bx-chevron-down"></i>
+                    </span>
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-buildings"></i></span>
+                                        <span class="text-base font-medium">The company</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="about.html" class="menu-link dropdown-link">About Us</a></li>
+                                        <li class="menu-item "><a href="team.html" class="menu-link dropdown-link">Leadership</a></li>
+                                        <li class="menu-item "><a href="https://careers.aqovia.com/" class="menu-link dropdown-link" target="_blank">Careers</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-code"></i></span>
+                                        <span class="text-base font-medium">Our work</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="what-we-do.html" class="menu-link dropdown-link">What we do</a></li>
+                                        <li class="menu-item "><a href="case-studies.html" class="menu-link dropdown-link">Case Studies</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item dropdown">
+                        <span class="dropdown-toggle menu-link">
+                      Cloud Solutions <i class="bx bx-chevron-down"></i>
+                    </span>
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-cloud"></i></span>
+                                        <span class="text-base font-medium">Future-Proofing</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="cloud-blueprint.html" class="menu-link dropdown-link">Cloud Blueprint</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-cloud"></i></span>
+                                        <span class="text-base font-medium">Unlock the True Potential</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="enterprise-cloud-optimised.html" class="menu-link dropdown-link">Enterprise Cloud Optimise</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-cloud"></i></span>
+                                        <span class="text-base font-medium">Power of Managed Hybrid Cloud</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="managed-enterprise-hybrid-cloud.html" class="menu-link dropdown-link">Managed Enterprise Hybrid Cloud</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item"><a href="contact.html" class="menu-link">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+</header>
+<!--
 <nav class="site-nav">
     <ul class="site-nav__level-01">
         <li class="site-nav__item "><a href="about.html">About Us</a></li>
@@ -54,12 +140,11 @@
         <li class="site-nav__item "><a href="what-we-do.html">What we do</a></li>
         <li class="site-nav__item "><a href="case-studies.html">Case Studies</a></li>
         <li class="site-nav__item "><a href="https://careers.aqovia.com/">Careers</a></li>
+        <li class="site-nav__item  -active "><a href="cloud-blueprint.html">Cloud Blueprint</a></li>
     </ul>
 </nav>
+-->
 
-
-        </div>
-    </header>
 
     <div class="main-content">
         <!-- You write code for this content block in another file -->
@@ -229,12 +314,83 @@
     </ul>
 </nav>
 
-            <p>© 2008 - 2024 Aqovia UK Limited. Registered in England and Wales (Reg. No. 06846037).</p>
+            <p>© 2008 - <span id="currentYear"></span> Aqovia UK Limited. Registered in England and Wales (Reg. No. 06846037).</p>
         </section>
     </footer>
 
-
     <script src="js/scripts.js" type="text/javascript"></script>
+    <script>
+        //current year
+        document.addEventListener('DOMContentLoaded', function() {
+            var currentYear = new Date().getFullYear();
+            document.getElementById('currentYear').textContent = currentYear;
+        });
+
+        //menu js
+        // Toggle to show and hide navbar menu
+        const navbarMenu = document.getElementById("menu");
+        const burgerMenu = document.getElementById("burger");
+
+        burgerMenu.addEventListener("click", () => {
+            navbarMenu.classList.toggle("is-active");
+            burgerMenu.classList.toggle("is-active");
+        });
+
+        // Toggle to show and hide dropdown menu
+        const dropdown = document.querySelectorAll(".dropdown");
+
+        dropdown.forEach((item) => {
+            const dropdownToggle = item.querySelector(".dropdown-toggle");
+
+            dropdownToggle.addEventListener("click", () => {
+                const dropdownShow = document.querySelector(".dropdown-show");
+                toggleDropdownItem(item);
+
+                // Remove 'dropdown-show' class from other dropdown
+                if (dropdownShow && dropdownShow != item) {
+                    toggleDropdownItem(dropdownShow);
+                }
+            });
+        });
+
+        // Function to display the dropdown menu
+        const toggleDropdownItem = (item) => {
+            const dropdownContent = item.querySelector(".dropdown-content");
+
+            // Remove other dropdown that have 'dropdown-show' class
+            if (item.classList.contains("dropdown-show")) {
+                dropdownContent.removeAttribute("style");
+                item.classList.remove("dropdown-show");
+            } else {
+                // Added max-height on active 'dropdown-show' class
+                dropdownContent.style.height = dropdownContent.scrollHeight + "px";
+                item.classList.add("dropdown-show");
+            }
+        };
+
+        // Fixed dropdown menu on window resizing
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 992) {
+                document.querySelectorAll(".dropdown-content").forEach((item) => {
+                    item.removeAttribute("style");
+                });
+                dropdown.forEach((item) => {
+                    item.classList.remove("dropdown-show");
+                });
+            }
+        });
+
+        // Fixed navbar menu on window resizing
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 992) {
+                if (navbarMenu.classList.contains("is-active")) {
+                    navbarMenu.classList.remove("is-active");
+                    burgerMenu.classList.remove("is-active");
+                }
+            }
+        });
+    </script>
+
 </body>
 
 </html>
