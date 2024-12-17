@@ -1,0 +1,646 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Managed Enterprise Hybrid Cloud</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" media="all">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,700,900" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#519171">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#519171">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47090251-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-47090251-1');
+    </script>
+</head>
+
+<body>
+
+     
+<header class="main-header header" id="header">
+    <div class="main-header__edges">
+        <nav class="navbar container">
+            <div class="navbar-inner">
+                <a href="index.html" class="main-header__home-link">
+                    <img src="img/aqovia-logo.svg" alt="Aqovia logo" class="main-header__logo">
+                </a>
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+            </div>
+            <div class="navbar-block" id="menu">
+                <ul class="menu">
+                    <!--    
+                    <li class="menu-item "><a href="about.html" class="menu-link site-nav__item">About Us</a></li>
+                    <li class="menu-item "><a href="team.html" class="menu-link site-nav__item">Leadership</a></li>
+                    <li class="menu-item "><a href="what-we-do.html" class="menu-link site-nav__item">What we do</a></li>
+                    <li class="menu-item "><a href="case-studies.html" class="menu-link site-nav__item">Case Studies</a></li>
+                    <li class="menu-item "><a href="https://careers.aqovia.com/" class="menu-link site-nav__item">Careers</a></li>
+                    <li class="menu-item "><a href="cloud-blueprint.html" class="menu-link site-nav__item">Cloud Blueprint</a></li>
+                    -->
+                    <li class="menu-item dropdown ">
+                        <span class="dropdown-toggle menu-link">
+                      About <i class="bx bx-chevron-down"></i>
+                    </span>
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-buildings"></i></span>
+                                        <span class="text-base font-medium">The company</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="about.html" class="menu-link dropdown-link">About Us</a></li>
+                                        <li class="menu-item "><a href="team.html" class="menu-link dropdown-link">Leadership</a></li>
+                                        <li class="menu-item "><a href="https://careers.aqovia.com/" class="menu-link dropdown-link" target="_blank">Careers</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-code"></i></span>
+                                        <span class="text-base font-medium">Our work</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="what-we-do.html" class="menu-link dropdown-link">What we do</a></li>
+                                        <li class="menu-item "><a href="case-studies.html" class="menu-link dropdown-link">Case Studies</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item dropdown">
+                        <span class="dropdown-toggle menu-link">
+                      Cloud Solutions <i class="bx bx-chevron-down"></i>
+                    </span>
+                        <div class="dropdown-content">
+                            <div class="dropdown-column">
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-cloud"></i></span>
+                                        <span class="text-base font-medium">Future-Proofing</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="cloud-blueprint.html" class="menu-link dropdown-link">Cloud Blueprint</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-cloud"></i></span>
+                                        <span class="text-base font-medium">Unlock the True Potential</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="enterprise-cloud-optimised.html" class="menu-link dropdown-link">Enterprise Cloud Optimise</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-group">
+                                    <div class="dropdown-title">
+                                        <span class="dropdown-icon"><i class="bx bx-cloud"></i></span>
+                                        <span class="text-base font-medium">Power of Managed Hybrid Cloud</span>
+                                    </div>
+                                    <ul class="dropdown-items">
+                                        <li class="menu-item "><a href="managed-enterprise-hybrid-cloud.html" class="menu-link dropdown-link">Managed Enterprise Hybrid Cloud</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item"><a href="contact.html" class="menu-link">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+</header>
+<!--
+<nav class="site-nav">
+    <ul class="site-nav__level-01">
+        <li class="site-nav__item "><a href="about.html">About Us</a></li>
+        <li class="site-nav__item "><a href="team.html">Leadership</a></li>
+        <li class="site-nav__item "><a href="what-we-do.html">What we do</a></li>
+        <li class="site-nav__item "><a href="case-studies.html">Case Studies</a></li>
+        <li class="site-nav__item "><a href="https://careers.aqovia.com/">Careers</a></li>
+        <li class="site-nav__item  -active "><a href="cloud-blueprint.html">Cloud Blueprint</a></li>
+    </ul>
+</nav>
+-->
+
+
+    <div class="main-content">
+        <!-- You write code for this content block in another file -->
+        
+<section>
+    <div class="edged-section">
+        <h1 class="page-title">Managed Enterprise Hybrid Cloud</h1>
+        <p class="page-title-subtext"><b>Unlock the Power of Managed Hybrid Cloud Solutions</b></p>
+        <div class="header-content">
+            <p>The Managed Enterprise Hybrid Cloud package by Aqovia is a comprehensive solution that combines consultancy, technical services, and ongoing management to deliver a seamless hybrid cloud experience.</p>
+            <p>The Enterprise Hybrid Cloud Trunkey package is designed to integrate on-premises and cloud resources, this managed package provides organisations with optimised performance, enhanced security, and the flexibility to scale.</p>
+            <p>With industry-leading tools and expert guidance, Aqovia ensures that your hybrid cloud infrastructure not only meets today’s demands but is also future-proofed to support growth, operational efficiency, and business continuity.</p>
+            <p>This solution is ideal for organisations aiming to integrate on-premises and cloud resources and align with sustainability goals. Here are some of the organisations that can get benefit:</p>
+            <ul>
+                <li>Finance</li>
+                <li>Healthcare</li>
+                <li>Pharma</li>
+                <li>Consumer</li>
+                <li>Government</li>
+                <li>Legal</li>
+                <li>Fast growing sectors</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="default-bg-section">
+    <div class="edged-section">
+        <div class="twocolumns">
+            <div class="work-listing__description">
+                <h2 class="bold-heading">Comprehensive Solution Deliverables</h2>
+                <p><b>Cloud Blueprint Package</b> <br> Foundational assessment and cloud planning.</p>
+                <p><b>Enterprise Cloud Optimised</b> <br> Customised cloud optimisation and cost-saving strategies.</p>
+                <p><b>Fully Managed Hybrid Cloud</b> <br> Ongoing management of hybrid cloud environments for maximum security and performance.</p>
+                <p><b>Private Cloud Edge Solutions</b> <br> Partner-enabled solutions for advanced private cloud infrastructure (Metal, HPE GL, VMware, Pure).</p>
+                <p><b>Cloud Networking (NaaS) and Network Optimisation</b> <br> Ensures optimised, secure network integration across cloud and on-premise systems.</p>
+                <p><b>On-Premise and Cloud Resource Integration</b> <br> Seamless integration of resources to ensure business continuity and resilience.</p>
+            </div>
+
+            <div class="img">
+                <img src="img/aqovia-managed-enterprise-hybrid-cloud.png" alt="Aqovia Managed Enterprise Hybrid Cloud">
+            </div>
+        </div>
+        <div class="divider">
+            <h2 class="bold-heading">Why Choose Managed Enterprise Hybrid Cloud?</h2>
+            <div class="row icon-blocks">
+                <div>
+                    <div><img src="img/seamless-integration.png" alt="Seamless Integration" width="100"></div>
+                    <p><b>Seamless Integration</b> <br>Unlock the power of managed hybrid cloud with a solution that integrates both on-premises and cloud resources.</p>
+                </div>
+                <div>
+                    <div><img src="img/enhanced-security-and-continuity.png" alt="Enhanced Security and Continuity" width="100"></div>
+                    <p><b>Enhanced Security and Continuity</b> <br>Benefit from robust security measures and resilient architecture to support business continuity.</p>
+                </div>
+                <div>
+                    <div><img src="img/performance-tailored-to-business-needs.png" alt="Performance Tailored to Business Needs" width="100"></div>
+                    <p><b>Performance Tailored to Business Needs</b> <br>Gain the flexibility, scalability, and cost-effectiveness of a multi-cloud approach, empowering your organisation to make the most of each cloud provider's strengths.</p>
+                </div>
+            </div>
+        </div>
+        <div class="divider">
+            <h2 class="bold-heading">Use Case</h2>
+            <div>
+                <div>
+                    <h3 class="work-listing__heading">Let's explore this Use Case to Understand Cost Benefits</h3>
+                </div>
+                <div class="row icon-blocks margin-top-10">
+                    <div class="item">
+                        <div><span class="icon-text">£250K</span></div>
+                        <p><b>Existing cloud costs per month</b></p>
+                    </div>
+                    <div class="item">
+                        <div><span class="icon-text">£150K</span></div>
+                        <p><b>Annual costs of data storage</b></p>
+                    </div>
+                    <div class="item">
+                        <div><span class="icon-text">5</span></div>
+                        <p><b>Number of IP resources involved in cloud migration</b></p>
+                    </div>
+                    <div class="item">
+                        <div><span class="icon-text">£75K</span></div>
+                        <p><b>Average annual salary of Security Ops resources</b></p>
+                    </div>
+                    <div class="item">
+                        <div><span class="icon-text">£100K</span></div>
+                        <p><b>Potential fines / penalties that could be levied</b></p>
+                    </div>
+                    <div class="item">
+                        <div><span class="icon-text">10%</span></div>
+                        <p><b>Likelihood of fines</b></p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3 class="work-listing__heading">Investment in Managed Enterprise Hybrid Cloud Solution</h3>
+                </div>
+                <div class="row icon-blocks margin-top-10">
+                    <div class="item">
+                        <div><span class="icon-text">£650,000</span></div>
+                        <p><b>Managed Enterprise Hybrid Cloud Solution</b></p>
+                        <p>A comprehensive package covering consultancy, technical services, and ongoing management</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3 class="work-listing__heading">How much you can save</h3>
+                </div>
+                <div class="row icon-blocks margin-top-10">
+                    <p><b>Expected saving is £805K per year.</b></p>
+                </div>
+                <div class="row icon-blocks margin-top-10">
+                    <div>
+                        <ul>
+                            <li>Optimise cloud spending</li>
+                            <li>Release internal resources for strategic tasks</li>
+                            <li>Unlock operational efficiencies</li>
+                            <li>Fully managed cloud service</li>
+                            <li>Align with your business objectives and deliver tangible value</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img margin-bottom-30">
+                    <img src="img/managed-enterprise-hybrid-cloud-investment-use-case.png" alt="Managed Enterprise Hybrid Cloud investment use case">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3 class="work-listing__heading">Your ROI over 3 Years</h3>
+                </div>
+                <div class="img margin-bottom-30">
+                    <img src="img/managed-enterprise-hybrid-cloud-roi.png" alt="Managed Enterprise Hybrid Cloud ROI">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3 class="work-listing__heading">The Summary of Benefits and ROI</h3>
+                </div>
+                <div class="margin-top-10">
+                    <p><b>Total Annual Benefit: £805K</b></p>
+                    <ul>
+                        <li>Infrastructure cost savings: £660K</li>
+                        <li>Operational efficiencies: £76K</li>
+                        <li>Security and data compliance: £56K</li>
+                        <li>Sustainability: £10K</li>
+                    </ul>
+                </div>
+                <div class="margin-top-10">
+                    <p><b>Return on investment over 3 years</b></p>
+                </div>
+                <div class="row icon-blocks margin-top-10">
+                    <div>
+                        <div><span class="icon-text">£1.1M</span></div>
+                        <p><b>Investment</b></p>
+                    </div>
+                    <div>
+                        <div><span class="icon-text">77%</span></div>
+                        <p><b>ROI</b></p>
+                    </div>
+                    <div>
+                        <div><span class="icon-text">£1.9M</span></div>
+                        <p><b>Benefit</b></p>
+                    </div>
+                    <div>
+                        <div><span class="icon-text">£845K</span></div>
+                        <p><b>Net Benefit</b></p>
+                    </div>
+                </div>
+                <div class="row icon-blocks">
+                    <p><b>Payback period</b></p>
+                </div>
+                <div class="row icon-blocks margin-top-10">
+                    <div>
+                        <div><span class="icon-text">22 months</span></div>
+                        <p>Approx</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider">
+            <h2 class="bold-heading">You are in good hands</h2>
+            <div>
+                <div>
+                    <h3 class="work-listing__heading">Expert Resources and Advanced Tools for Hybrid Cloud Success​</h3>
+                </div>
+                <div class="margin-top-10  margin-bottom-30">
+                    <p><b>Delivering Tangible Value through Resources and Tools</b></p>
+                    <p>Together, Aqovia's skilled team and advanced tools deliver significant benefits by enabling your organization to:</p>
+                    <ul>
+                        <li><b>Optimise Costs:</b> Achieve substantial cost savings with a strategic hybrid architecture and ongoing cost-monitoring tools.</li>
+                        <li><b>Enhance Security and Compliance:</b> Build a robust, compliant hybrid environment that meets both regulatory and organisational security requirements.</li>
+                        <li><b>Support Long-Term Growth:</b> Create an adaptable hybrid architecture with best practices, operational playbooks, and continuous monitoring for ongoing optimisation.</li>
+                        <li><b>Promote Operational Efficiency:</b> Streamline resources and leverage edge computing options for increased performance across cloud and on-prem environments.</li>
+                        <li><b>Align Cloud Strategy with Business Needs:</b> Ensure every element of your hybrid cloud deployment supports overarching business goals, from productivity to innovation.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="work-listing__heading">Our Dedicated Expert Team</h3>
+                </div>
+                <div>
+                    <p>Aqovia’s Managed Enterprise Hybrid Cloud package deploys a team of hybrid cloud specialists who are dedicated to achieving a resilient, cost-efficient, and fully managed hybrid cloud environment for your organisation. Over 180 days,
+                        these experts work closely with your team to design, implement, and optimise a hybrid cloud solution tailored to your specific business and technical needs.</p>
+                </div>
+                <div class="row icon-blocks margin-top-10 margin-bottom-30">
+                    <div class="item">
+                        <p><b>Cloud Lead:</b></p>
+                        <p>Responsible for aligning the hybrid cloud deployment with your business goals. The Cloud Lead oversees all phases of the project, ensuring a strategic approach to integrating on-premise and cloud environments while meeting timelines
+                            and KPIs.</p>
+                    </div>
+                    <div class="item">
+                        <p><b>Cloud Architect:</b></p>
+                        <p>Designs an adaptable and scalable architecture that connects your existing on-premise resources with cloud solutions. The Cloud Architect focuses on ensuring security, optimising performance, and supporting long-term scalability.
+                            They also evaluate and incorporate partner-enabled solutions (Metal, HPE GL, VMware, Pure) for tailored edge computing and private cloud needs.</p>
+                    </div>
+                    <div class="item">
+                        <p><b>Cloud Analyst:</b></p>
+                        <p>Performs an in-depth analysis of current workloads, resource utilisation, and cost structures. The Cloud Analyst generates detailed reports to guide cost optimisation, network performance improvements, and efficiency gains, providing
+                            ongoing data insights for continuous improvement.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3 class="work-listing__heading">Advanced Tools for Planning, Execution, and Continuous Optimisation</h3>
+                </div>
+                <div>
+                    <p>Our Managed Enterprise Hybrid Cloud package is supported by advanced tools that enhance transparency, streamline planning, and maximise the effectiveness of hybrid cloud operations. These tools are designed to give you a clear view
+                        of costs, ROI, and network performance to make data-driven decisions throughout the cloud transformation journey.</p>
+                </div>
+                <div class="row icon-blocks margin-top-10">
+                    <div class="item">
+                        <p><b>Planning and Architecture Design Tool:</b></p>
+                        <p>This tool enables precise design of a secure and robust hybrid cloud architecture. It allows our team to model different integration scenarios, ensuring compatibility and resilience between on-premises and cloud resources. With
+                            this tool, we create a tailored hybrid structure that prioritises both security and performance to meet your unique operational demands.</p>
+                    </div>
+                    <div class="item">
+                        <p><b>Cloud Costing &amp; ROI Tool:</b></p>
+                        <p>Budget control is key to cloud success. Our costing and ROI tool provides detailed insights into projected expenses across various cloud providers, enabling comparison of cost models and helping identify cost-saving opportunities.
+                            The tool’s total cost of ownership (TCO) calculator ensures you understand both immediate and long-term financial impacts of the hybrid setup.</p>
+                    </div>
+                    <div class="item">
+                        <p><b>Partner Tools & APIs:</b></p>
+                        <p>Through strategic partner tools like Metal, HPE GL, VMware, and Pure, we deliver powerful edge computing and private cloud options that extend your on-prem capabilities while seamlessly integrating with public clouds. These APIs
+                            allow rapid scaling, advanced network optimisation, and secure data exchange across environments, maximising flexibility while maintaining compliance.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3 class="work-listing__heading">Why Partner with Aqovia?</h3>
+                </div>
+                <div>
+                    <p>With a proven track record supporting industry leaders like BBC, Pearson, and EuroMoney, Aqovia delivers secure, cost-effective hybrid cloud solutions tailored to the unique demands of your organisation. Our vendor-neutral approach,
+                        combined with a focus on operational efficiency and sustainability, ensures that your cloud investments drive value while preserving security and compliance.</p>
+                </div>
+                <div class="row icon-blocks">
+                    <div class="item">
+                        <div><img src="img/fully-managed-service.png" alt="Fully Managed Service" width="100"></div>
+                        <p><b>Fully Managed Service</b> <br>End-to-end hybrid cloud management, from setup to ongoing optimisation.</p>
+                    </div>
+                    <div class="item">
+                        <div><img src="img/trusted-by-industry-leaders.png" alt="Trusted by Industry Leaders" width="100"></div>
+                        <p><b>Trusted by Industry Leaders</b> <br>Proven success in helping organisations like BBC, Pearson, and EuroMoney optimise cloud infrastructure.</p>
+                    </div>
+                    <div class="item">
+                        <div><img src="img/cost-efficiency.png" alt="Cost Efficiency" width="100"></div>
+                        <p><b>Cost Efficiency</b> <br>Avoid cloud egress charges, achieving up to 30% savings on cloud expenses.</p>
+                    </div>
+                    <div class="item">
+                        <div><img src="img/operational-gains.png" alt="Operational Gains" width="100"></div>
+                        <p><b>Operational Gains</b> <br>Up to 40% improvement in efficiency through tailored cloud solutions.</p>
+                    </div>
+                    <div class="item">
+                        <div><img src="img/security.png" alt="Security and Compliance" width="100"></div>
+                        <p><b>Security and Compliance</b> <br>100% assurance of data security, sovereignty, and compliance.</p>
+                    </div>
+                    <div class="item">
+                        <div><img src="img/sustainability-reporting.png" alt="Sustainability Reporting" width="100"></div>
+                        <p><b>Sustainability Reporting</b> <br>Customised reporting on the environmental impact of hybrid IT infrastructure.</p>
+                    </div>
+                    <div class="item">
+                        <div><img src="img/cloud-tco-calculator.png" alt="Cloud TCO Calculator" width="100"></div>
+                        <p><b>Cloud TCO Calculator</b> <br>Precision in total cost of ownership calculations for informed financial planning.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3 class="work-listing__heading">Proven Results with Aqovia</h3>
+                </div>
+                <div class="row icon-blocks margin-top-10">
+                    <div class="item">
+                        <div class="icon-text">20% to 24%</div>
+                        <p>Optimise cloud spending</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon-text">50% to 55%</div>
+                        <p>Eliminate / reduce data duplication</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon-text">10% to 20%</div>
+                        <p>Security and compliance assured</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon-text">100%</div>
+                        <p>Comply with sustainability regulations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider margin-bottom-30">
+            <h2 class="bold-heading">Ready to Transform Your Hybrid Cloud Strategy?</h2>
+            <p><a href="contact.html" class="main-btn">Contact Us</a></p>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+
+<section class="alternate-bg-section">
+	<div class="edged-section">
+		<h2 class="bold-heading">Our leading clients</h2>
+		
+		<ul class="clients-logo">
+			
+			<li class="clients-logo__item">
+			  <img src="img/clients/itv.svg" alt="ITV">
+			</li>
+			
+			<li class="clients-logo__item">
+			  <img src="img/clients/bbc.svg" alt="BBC">
+			</li>
+			
+			<li class="clients-logo__item">
+			  <img src="img/clients/interxion.svg" alt="Interxion">
+			</li>
+			
+			<li class="clients-logo__item">
+			  <img src="img/clients/vodafone.svg" alt="Vodafone">
+			</li>
+			
+			<li class="clients-logo__item">
+			  <img src="img/clients/sky.svg" alt="Sky">
+			</li>
+			
+			<li class="clients-logo__item">
+			  <img src="img/clients/pearson.svg" alt="Pearson">
+			</li>
+			
+		</ul>
+	</div>
+</section> <section class="default-bg-section">
+	<div class="edged-section">
+		<h2 class="bold-heading">Testimonials</h2>
+
+		<ul class="testimonials">
+			<li class="testimonials__item">
+				<div class="testimonials__visual">
+					<img src="img/clients/bbc.svg" alt="BBC">
+				</div>
+
+				<div class="testimonials__content">
+					<p class="testimonials__quote">Aqovia set the standards on how to run technology projects.</p>
+					<p class="testimonials__author">Andrew Stephens</p>
+					<p class="testimonials__author-meta">Head of Operations at BBC Motion Gallery</p>
+				</div>
+			</li>
+
+			<li class="testimonials__item">
+				<div class="testimonials__visual">
+					<img src="img/clients/interxion.svg" alt="interxion">
+				</div>
+
+				<div class="testimonials__content">
+					<p class="testimonials__quote">Aqovia ran our Agile project successfully and introduced test based development which had a very positive impact on user involvement, alignment of functionality and quality of code delivered.</p>
+					<p class="testimonials__author">Eric Boden</p>
+					<p class="testimonials__author-meta">Vice-President ICT at Interxion, a Digital Realty Company</p>
+				</div>
+			</li>
+
+			<li class="testimonials__item">
+				<div class="testimonials__visual">
+					<img src="img/clients/pearson.svg" alt="Pearson">
+				</div>
+
+				<div class="testimonials__content">
+					<p class="testimonials__quote">Aqovia has a quality team that demonstrate excellent understanding and application of value centric business transformation.</p>
+					<p class="testimonials__author">Michelle Seed</p>
+					<p class="testimonials__author-meta">VP Strategic Planning</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section> 
+
+    </div>
+
+    <footer class="main-footer">
+        <section class="main-footer__contact">
+            <div class="edged-section short-copy-emphasis">
+                <p class="main-footer__heading">Ready to innovate your technological efforts?</p>
+                <p>We can align you in the right direction with a solution for your business needs.</p>
+                <a href="contact.html" class="main-btn">Contact Us</a>
+            </div>
+        </section>
+
+        <section class="main-footer__legal">
+             
+<nav class="footer-nav">
+    <ul class="site-nav__level-01">
+        <li class="site-nav__item "><a href="acceptable-use-policy.html">Acceptable Use Policy</a></li>
+        <li class="site-nav__item "><a href="cookie-policy.html">Cookie Policy</a></li>
+        <li class="site-nav__item "><a href="terms-of-use.html">Terms of Use</a></li>
+    </ul>
+</nav>
+
+            <p>© 2008 - <span id="currentYear"></span> Aqovia UK Limited. Registered in England and Wales (Reg. No. 06846037).</p>
+        </section>
+    </footer>
+
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script>
+        //current year
+        document.addEventListener('DOMContentLoaded', function() {
+            var currentYear = new Date().getFullYear();
+            document.getElementById('currentYear').textContent = currentYear;
+        });
+
+        //menu js
+        // Toggle to show and hide navbar menu
+        const navbarMenu = document.getElementById("menu");
+        const burgerMenu = document.getElementById("burger");
+
+        burgerMenu.addEventListener("click", () => {
+            navbarMenu.classList.toggle("is-active");
+            burgerMenu.classList.toggle("is-active");
+        });
+
+        // Toggle to show and hide dropdown menu
+        const dropdown = document.querySelectorAll(".dropdown");
+
+        dropdown.forEach((item) => {
+            const dropdownToggle = item.querySelector(".dropdown-toggle");
+
+            dropdownToggle.addEventListener("click", () => {
+                const dropdownShow = document.querySelector(".dropdown-show");
+                toggleDropdownItem(item);
+
+                // Remove 'dropdown-show' class from other dropdown
+                if (dropdownShow && dropdownShow != item) {
+                    toggleDropdownItem(dropdownShow);
+                }
+            });
+        });
+
+        // Function to display the dropdown menu
+        const toggleDropdownItem = (item) => {
+            const dropdownContent = item.querySelector(".dropdown-content");
+
+            // Remove other dropdown that have 'dropdown-show' class
+            if (item.classList.contains("dropdown-show")) {
+                dropdownContent.removeAttribute("style");
+                item.classList.remove("dropdown-show");
+            } else {
+                // Added max-height on active 'dropdown-show' class
+                dropdownContent.style.height = dropdownContent.scrollHeight + "px";
+                item.classList.add("dropdown-show");
+            }
+        };
+
+        // Fixed dropdown menu on window resizing
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 992) {
+                document.querySelectorAll(".dropdown-content").forEach((item) => {
+                    item.removeAttribute("style");
+                });
+                dropdown.forEach((item) => {
+                    item.classList.remove("dropdown-show");
+                });
+            }
+        });
+
+        // Fixed navbar menu on window resizing
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 992) {
+                if (navbarMenu.classList.contains("is-active")) {
+                    navbarMenu.classList.remove("is-active");
+                    burgerMenu.classList.remove("is-active");
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
